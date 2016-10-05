@@ -1,0 +1,114 @@
+/* RESET */
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* CLEARFIX */
+.box:before, .box:after {
+	content: '';
+	display: table;
+}
+
+.box:after {
+	clear: both;
+}
+
+/* COLUMNS */
+
+.col {
+	display: block;
+	float: left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type {
+	margin-left: 0;
+}
+
+/* COLUMN WIDTH */
+
+/* Temp system av 3 */
+.col_1_of_3 { width: 32.2%}
+.col_2_of_3 { width: 65.8%;}
+.col_3_of_3 { width: 100%; }
+
+/* Calculate: 
+How many margins  
+If 12 Columns, one less margin = 11
+
+number of margins (11) * margin width (1.6%) = 17.6% (Total width of margins) 
+
+100% - Total margin width (17.6%) = 82.4% total width of columns
+
+82.4% (total width of colums ) / (divided by) number of columns (12). = 6.86% (single column width).
+
+12 Column:
+
+11*1.6 = 17.6
+100-17.6 = 82.4
+82.4/12 = 6.86
+
+6 Columns:
+
+5*1.6 = 8
+100-8 = 92
+92/6 = 15.33333 ~ 15.32
+
+4 Columns:
+3*1.6 = 4.8
+100-4.8 = 95.2
+95.2/4 = 23.8
+
+
+*/
+
+.col_1_of_12  { width: 6.86%; }
+.col_2_of_12  { width: 15.32%; }
+.col_3_of_12  { width: 23.8%; }
+.col_4_of_12  { width: 32.26%; }
+.col_5_of_12  { width: 40.73%; }
+.col_6_of_12  { width: 49.2%;  }
+.col_7_of_12  { width: 57.66%; }
+.col_8_of_12  { width: 66.13%; }
+.col_9_of_12  { width: 74.6%;  }
+.col_10_of_12 { width: 83.06%; }
+.col_11_of_12 { width: 91.53%; }
+.col_12_of_12 { width: 100%; margin-left: 0 }
+
+
+@media only screen and ( max-width: 480px ) {
+
+	.col {
+		margin-left: 0;
+	}
+
+	.col_1_of_12,
+	.col_2_of_12,
+	.col_3_of_12,
+	.col_4_of_12,
+	.col_5_of_12,
+	.col_6_of_12,
+	.col_7_of_12,
+	.col_8_of_12,
+	.col_9_of_12,
+	.col_10_of_12,
+	.col_11_of_12,
+	.col_12_of_12 {
+		width: 100%;
+	}
+
+
+} /* Media 480px */
+
+
+
+
+

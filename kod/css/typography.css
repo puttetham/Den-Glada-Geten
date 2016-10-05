@@ -1,0 +1,15 @@
+#site-heading {
+	text-align: center;
+	color: #fff;
+}
+
+#site-heading h1 {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: 'Yatra One', sans-serif;
+}
+
+#site-heading span {
+	font-size: 40px;
+}
+
