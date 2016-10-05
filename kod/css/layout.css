@@ -65,3 +65,151 @@ body, html {
    height: 60px;
    float: left;
 }
+
+
+
+/********************************************
+            TEST
+************************************************/
+
+
+
+
+
+
+/***************************
+GENERAL
+***************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%
+}
+
+
+/***************************
+HEADING
+***************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  position: fixed;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-family: 'Poiret One', cursive;
+  font-size: 1em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+/***************************
+NAVIGATION
+***************************/
+
+nav {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;s
+  margin:0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+ 
+nav a {
+  font-weight: 800;
+  padding: 15px 5px;
+}
+
+/***************************
+FOOTER
+***************************/
+
+footer {
+  font-size: 0.75em;
+  text-align:center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+/***************************
+COLORS
+***************************/
+
+/* site body */
+
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+header {
+  background: #4a148c;
+  border-color: #880e4f;
+}
+
+/* nav background on mobile devices */
+nav {
+  background: #880e4f;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* links color */
+a {
+  color: #6ab47b;
+}
+
+/* color of a nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link  */
+nav a.selected, nav a:hover {
+  color: #9e9e9e;
+}
