@@ -1,0 +1,8 @@
+#gallery {
+  margin:auto;
+  max-width: 900px;
+}
+
+.gallery-img {
+  max-height: 150px;
+}
