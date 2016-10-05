@@ -6,3 +6,13 @@
 .gallery-img {
   max-height: 150px;
 }
+
+#lightbox {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.expanded {
+    display: block;
+}

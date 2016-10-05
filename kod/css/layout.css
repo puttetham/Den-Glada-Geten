@@ -67,7 +67,6 @@ body, html {
 }
 
 
-
 /********************************************
             TEST
 ************************************************/
@@ -81,16 +80,16 @@ body, html {
 GENERAL
 ***************************/
 
-body {
+/*body {*/
   font-family: 'Open Sans', sans-serif;
 }
 
 
-a {
+/*a {
   text-decoration: none;
-}
+}*/
 
-img {
+/*img {*/
   max-width: 100%
 }
 
@@ -131,7 +130,7 @@ h2 {
 NAVIGATION
 ***************************/
 
-nav {
+/*nav {
   font-family: 'Poiret One', cursive;
   text-align: center;
   padding: 10px 0;
@@ -151,7 +150,7 @@ nav li {
 nav a {
   font-weight: 800;
   padding: 15px 5px;
-}
+}*/
 
 /***************************
 FOOTER
@@ -178,38 +177,38 @@ COLORS
 
 /* site body */
 
-body {
+/*body {
   background-color: #fff;
   color: #999;
-}
+}*/
 
 /* green header */
-header {
+/*header {
   background: #4a148c;
   border-color: #880e4f;
-}
+}*/
 
 /* nav background on mobile devices */
-nav {
+/*nav {
   background: #880e4f;
-}
+}*/
 
 /* logo text */
-h1, h2 {
+/*h1, h2 {
   color: #fff;
-}
+}*/
 
 /* links color */
-a {
+/*a {
   color: #6ab47b;
-}
+}*/
 
 /* color of a nav link */
-nav a, nav a:visited {
+/*nav a, nav a:visited {
   color: #fff;
-}
+}*/
 
 /* selected nav link  */
-nav a.selected, nav a:hover {
+/*nav a.selected, nav a:hover {
   color: #9e9e9e;
-}
+}*/
