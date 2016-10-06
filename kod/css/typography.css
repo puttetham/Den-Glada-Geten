@@ -1,12 +1,29 @@
+.invert i, .invert h1, .invert h2 {
+	color: #fff;
+}
+
+.invert i {
+	font-size: 30px;
+}
+
 #site-heading {
 	text-align: center;
-	color: #fff;
+	color: #000;
+	line-height: 20px;
+	margin-top: 10px;
+}
+
+#site-heading h1, #site-heading h2 {
+	font-family: 'Yatra One', sans-serif;
 }
 
 #site-heading h1 {
 	text-transform: uppercase;
 	font-size: 30px;
-	font-family: 'Yatra One', sans-serif;
+}
+
+#site-heading h2 {
+	font-size: 25px;
 }
 
 #site-heading span {
