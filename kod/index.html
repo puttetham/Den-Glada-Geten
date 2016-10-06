@@ -5,7 +5,8 @@
    <title></title>
    <link rel="stylesheet" type="text/css" href="style.css">
    <script src="https://use.fontawesome.com/986342ab7c.js"></script>
-   <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet"> <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"><!-- fonts -->
 </head>
 <body>
 
@@ -13,25 +14,34 @@
 
 <!-- Meny -->
 <nav id="main-menu">
-Meny
- <ul>
-   <li><a href="#">London</a></li>
-   <li><a href="#">Paris</a></li>
-   <li><a href="#">Tokyo</a></li>
- </ul>
+   <figure id="branding">
+      <a href="#"><i class="fa fa-envira"></i></a>
+   </figure> 
+   <ul>
+      <li><a href="#">Hem</a></li>
+      <li><a href="#">Våra rum</a></li>
+      <li><a href="#">Bildgalleri</a></li>
+      <li><a href="#">Hitta hit</a></li>
+   </ul>
 </nav>
 
 <!--Header med bilder -->
 <header id="main-header">
-   <div class="inner-container">
-      <figure id="branding">
+   <div class="inner-container">    
+      <section id="site-heading" class="invert">
          <i class="fa fa-envira"></i>
-      </figure> 
-      <section id="site-heading">
          <h1><span>H</span>otell - <span>D</span>en <span>g</span>lada <span>g</span>eten</h1>  
+         <h2>Bed and Breakfast</h2>
       </section>
    </div>
 </header>
+
+<!-- Galleri -->
+<section id="start-gallery">
+   <div class="inner-container">
+      <h1>Galleri</h1>
+   </div>
+</section>
 
 <!--Kortare information om hotellet -->
 <section id="main-content">
@@ -52,16 +62,16 @@ Meny
       <div class="box">
          <form id="booking-form">
             <!-- Datum -->
-            <div class="col col-6-of-12">
+            <div class="col col_6_of_12">
                <label>Från</label>
                <input type="date" required="">
             </div>
-            <div class="col col-6-of-12">
+            <div class="col col_6_of_12">
                <label>Till</label>
                <input type="date" required="">
             </div>
             <!-- Rum -->
-            <div class="col col-4-of-12">
+            <div class="col col_3_of_12">
                <label>Antal rum</label>
                <select class="options-room">
                   <option value="1">1</option>
@@ -72,7 +82,7 @@ Meny
                </select>
             </div>
             <!-- Vuxna -->
-            <div class="col col-4-of-12">
+            <div class="col col_3_of_12">
                <label>Antal Vuxna</label>
                <select class="options-adults">
                   <option value="1">1</option>
@@ -83,7 +93,7 @@ Meny
                </select>
             </div>
             <!-- Barn -->
-            <div class="col col-4-of-12">
+            <div class="col col_3_of_12">
                <label>Antal barn</label>
                <select class="options-kids">
                   <option value="0">0</option>
@@ -95,7 +105,7 @@ Meny
                </select>
             </div>
             <!-- Sök -->
-            <div class="col col-12-of-12">
+            <div class="col col_3_of_12">
                <input type="submit" name="submit">
             </div>
          </form>
@@ -105,7 +115,7 @@ Meny
 <!-- Footer -->
 <footer id="main-footer">
    <div class="inner-container">
-      <span>Copyright © W3Schools.com</span>
+      <span>Copyright © KYH, Grupp 6, All Rights Reserved</span>
    </div>
 </footer>
 
