@@ -1,6 +1,12 @@
+/*RESET*/
 @import url('css/gridsystem.css');
 @import url('css/typography.css');
 @import url('css/layout.css');
 @import url('css/header.css');
+<<<<<<< HEAD
 @import url('css/booking.css');
 @import url('css/gallery.css');
+=======
+@import url('css/menu.css');
+@import url('css/booking.css');
+>>>>>>> refs/remotes/origin/Development
