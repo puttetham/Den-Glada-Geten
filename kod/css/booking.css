@@ -1,3 +1,16 @@
-#booking-form {
-	margin-left: 40px;
+/*bokningens vänstra del*/
+#booking-left {
+	float: left;
+	width: 50%;
+}
+
+/*bokningens högra del*/
+#booking-right {
+	margin-top: 40px;
+	float: right;
+	width: 45%;
+}
+
+.booking-form input[type="date"], select {
+	margin-bottom: 10px;
 }

@@ -1,3 +1,9 @@
+/*All vit text*/
+
+.invert {
+	color: #fff;
+}
+
 .invert i, .invert h1, .invert h2 {
 	color: #fff;
 }
@@ -5,6 +11,8 @@
 .invert i {
 	font-size: 30px;
 }
+
+/*Huvudsidans titel*/
 
 #site-heading {
 	text-align: center;
@@ -30,3 +38,13 @@
 	font-size: 40px;
 }
 
+/*Bokningens typsnits*/
+#booking-heading h2 {
+	font-family: 'Oswald', sans-serif;
+	margin-top: 80px;
+	text-align: center;
+}
+
+#booking-right {
+	font-family: 'Open Sans', sans-serif;
+}
