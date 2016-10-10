@@ -1,10 +1,11 @@
 #gallery {
-  margin:auto;
-  max-width: 900px;
+    padding-top: 5em;
+    margin:auto;
+    max-width: 900px;
 }
 
 .gallery-img {
-  max-height: 150px;
+    max-height: 150px;
 }
 
 #lightbox {
@@ -12,7 +13,6 @@
     background-color: rgba(0, 0, 0, 0.9);
     position:fixed;
     z-index: 1;
-    border: 2px black solid;
     top:0;
     left:0;
     width:100%;
@@ -21,14 +21,34 @@
 
 }
 
+#l-arrow, #r-arrow {
+    display: inline-block;
+    height:80%;
+    border:red 2px solid;
+}
+
+#l-arrow i, #r-arrow i, #close {
+    color:#fff;
+    font-size: 3em;
+}
+
+#close {
+    position: fixed;
+    top:2;
+    right:2;
+}
+
 #centerer {
     display: inline-block;
     height: 100%;
-    /*vertical-align: middle;*/
+    border:red 2px solid;
+    vertical-align: middle;
 }
 
 #big-img {
+    margin-top:2em;
     display: inline-block;
     max-height: 80%;
+    border:green 2px solid;
     /*vertical-align: middle;*/
 }
