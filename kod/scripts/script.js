@@ -19,7 +19,10 @@
 $(function () {
     $('.gallery-img').on('click', function() {
         $('#big-img').attr('src', this.src);
-        $('#lightbox').css('background-color', 'rgba(0, 0, 0, 1)');
+        $('#lightbox').css('display', 'block');
+    });
 
+    $('#lightbox').on('click', function() {
+        $(this).css('display', 'none');
     });
 });
