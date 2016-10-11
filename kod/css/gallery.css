@@ -6,6 +6,7 @@
 
 .gallery-img {
     max-height: 150px;
+    margin:0,1em;
 }
 
 #lightbox {
@@ -19,12 +20,6 @@
     height:100%;
     text-align: center;
 
-}
-
-#l-arrow, #r-arrow {
-    display: inline-block;
-    height:80%;
-    border:red 2px solid;
 }
 
 #l-arrow i, #r-arrow i, #close {
@@ -41,14 +36,11 @@
 #centerer {
     display: inline-block;
     height: 100%;
-    border:red 2px solid;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
 }
 
 #big-img {
     margin-top:2em;
     display: inline-block;
     max-height: 80%;
-    border:green 2px solid;
-    /*vertical-align: middle;*/
 }
