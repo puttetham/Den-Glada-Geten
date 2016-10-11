@@ -6,6 +6,14 @@
 #branding i {
 	color: #222;
 	font-size: 30px;
+     -webkit-transition: 0.3s;
+	-webkit-o-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#branding i:hover {
+    color: #7FFFD4;
 }
 
 #main-menu ul {
@@ -26,6 +34,14 @@
 	font-size: 20px;
 	color: #222;
 	font-family: 'Oswald', sans-serif;
+    -webkit-transition: 0.3s;
+	-webkit-o-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#main-menu a:hover {
+    color: #7FFFD4;
 }
 
 /*Other devices*/
