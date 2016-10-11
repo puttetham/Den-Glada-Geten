@@ -1,14 +1,16 @@
-.col:first-of-type {
-	margin-left: 2%;
+/*bokningens vänstra del*/
+#booking-left {
+	float: left;
+	width: 50%;
 }
- .col-4-of-12 {
- 	width: 100%;
- }
 
- .col-6-of-12 {
- 	width: 100%;
- }
+/*bokningens högra del*/
+#booking-right {
+	margin-top: 40px;
+	float: right;
+	width: 45%;
+}
 
- .col-12-of-12 {
- 	width: 100%;
- }
+.booking-form input[type="date"], select {
+	margin-bottom: 10px;
+}
