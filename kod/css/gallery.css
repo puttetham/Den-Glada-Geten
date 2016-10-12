@@ -22,20 +22,24 @@
 
 }
 
-#l-arrow i, #r-arrow i, #close {
+#lightbox .fa {
+    position: absolute;
+    top: 50%;
     color:#fff;
-    font-size: 3em;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 #close {
-    position: fixed;
-    top:2;
-    right:2;
+    position: absolute;
+    top:5%;
+    right:5%;
 }
 
 #centerer {
     display: inline-block;
     height: 100%;
+    z-index: 2;
     /*vertical-align: middle;*/
 }
 
