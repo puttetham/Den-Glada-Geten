@@ -1,6 +1,6 @@
-#wrapper1 {
-	line-height: 1.6;
-	color: #3a3a3a;
-  	width: 70%;
-  	margin: 0 auto;
+/*eftersom menyn har position fixed, hamnar elementen under. För att fixa det lägger man bara till en 'margin-top'*/
+#room-main-content {
+    background: red; /*kan vara smart att ha en färg för varje element så man lättare ser vad man gör för något.*/
+    margin-top: 110px;
+    float: left; /*alltid ha float left så att elementet hamnar nedanför*/
 }
