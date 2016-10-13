@@ -50,7 +50,7 @@ body, html {
 }
 
 #booking {
-   background: url(../images/booking-back.jpg) no-repeat fixed;
+   background: grey;
    max-width: 1500px;
    width: 100%;
    height: 250px;
@@ -58,9 +58,9 @@ body, html {
 }
 
 #main-footer {
-   background: #fff;
+   background: red;
    max-width: 1500px;
    width: 100%;
-   height: 120px;
+   height: 150px;
    float: left;
 }

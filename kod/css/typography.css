@@ -1,4 +1,12 @@
 /*All vit text*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #222;
+}
+
+p, label {
+    font-family: 'Opens Sans', sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
@@ -26,7 +34,7 @@ p, label {
 
 #site-heading {
 	text-align: center;
-	color: #000;
+	color: #222;
 	line-height: 20px;
 	margin-top: 10px;
 }
@@ -50,13 +58,28 @@ p, label {
 
 /*Bokningens typsnits*/
 #booking-heading h2 {
-	font-family: 'Oswald', sans-serif;
 	margin-top: 80px;
 	text-align: center;
 }
 
-#booking-right {
-	font-family: 'Open Sans', sans-serif;
+.headings {
+    max-height: 1500px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.headings h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hotel-info-col h4 {
+    text-transform: uppercase;
+}
+
+#main-footer span {
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .headings {
