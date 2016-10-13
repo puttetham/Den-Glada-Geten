@@ -1,5 +1,15 @@
 /*All vit text*/
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #222;
+}
+
+p, label {
+    font-family: 'Opens Sans', sans-serif;
+}
+
+
 .invert {
 	color: #fff;
 }
@@ -47,4 +57,24 @@
 
 #booking-right {
 	font-family: 'Open Sans', sans-serif;
+}
+
+.headings {
+    max-height: 1500px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.headings h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hotel-info-col h4 {
+    text-transform: uppercase;
+}
+
+#main-footer span {
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
 }
