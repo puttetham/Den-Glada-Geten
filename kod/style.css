@@ -3,6 +3,8 @@
 @import url('css/layout.css');
 @import url('css/header.css');
 @import url('css/menu.css');
+@import url('css/main-info.css');
 @import url('css/booking.css');
 @import url('css/footer.css');
-@import url('css/main-info.css');
+/*Hitta hit*/
+@import url('css/find-us.css');
