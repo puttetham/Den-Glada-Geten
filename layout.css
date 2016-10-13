@@ -1,0 +1,65 @@
+body, html {
+   padding: 0;
+   margin: 0;   
+}
+
+#container {
+   max-width: 1500px;
+   width: 100%;
+}
+
+.inner-container {
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+#main-header {
+   background: #7FFFD4;
+   max-width: 1500px;
+   width: 100%;
+   height: 150px;
+   margin-top: 90px;
+   padding: 10px;
+   float: left;
+}
+
+#main-menu {
+   background: #fff;
+   max-width: 1500px;
+   width: 100%;
+   height: 90px;
+   position: fixed;
+   box-shadow: 2px 5px 5px #707070 ;
+}
+
+#start-gallery {
+   background: #888;
+   max-width: 1500px;
+   width: 100%;
+   height: 400px;
+   float: left;
+}
+
+#main-content {
+   background: #fff;
+   max-width: 1500px;
+   width: 100%;
+   height: 460px;
+   float: left;
+}
+
+#booking {
+   background: grey; 
+   max-width: 1500px;
+   width: 100%;
+   height: 250px;
+   float: left;
+}
+
+#main-footer {
+   background: #fff;
+   max-width: 1500px;
+   width: 100%;
+   height: 200px;
+   float: left;
+}

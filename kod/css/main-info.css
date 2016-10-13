@@ -1,4 +1,4 @@
-﻿#hotel-info-article {
+#hotel-info-article {
     max-height: 1500px;
     width: 100%;
     padding: 5px 10px;
@@ -6,7 +6,7 @@
 }
 
 #hotel-info-article p {
-    text-align: center; 
+    text-align: center;
 }
 
 #hotel-info-col {
