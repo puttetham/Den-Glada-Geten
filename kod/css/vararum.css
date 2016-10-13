@@ -1,14 +1,13 @@
 /*eftersom menyn har position fixed, hamnar elementen under. För att fixa det lägger man bara till en 'margin-top'*/
 #room-main-content {
     background: ; /*kan vara smart att ha en färg för varje element så man lättare ser vad man gör för något.*/
-    margin-top: 110px;
+    margin: 110px auto 0;
     float: left; /*alltid ha float left så att elementet hamnar nedanför*/
-    max-width: 940px;
     padding: 0 5%;
 }
 
 #rumgallery img {
-  max-width: 100%
+  max-width: 100%;
 }
 
 #rumgallery {
@@ -19,15 +18,19 @@
 
 #rumgallery li {
   float: left;
-  width: 45%;
-  margin: 2.5%;
+  width: 30%;
+  margin: 3.33%;
   background-color: #f5f5f5;
-  color: #bdc3c7;
+}
+
+#rumgallery a {
+	text-decoration: none;
 }
 
 #rumgallery li a p {
   margin: 0;
   padding: 5px;
   font-size: 0.75em;
-  color: #bdc3c7;
+  color: #000;
+  font-family: sans-serif;
 }
