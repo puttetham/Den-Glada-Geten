@@ -1,10 +1,14 @@
 /*eftersom menyn har position fixed, hamnar elementen under. För att fixa det lägger man bara till en 'margin-top'*/
 #room-main-content {
-    background: red; /*kan vara smart att ha en färg för varje element så man lättare ser vad man gör för något.*/
+    background: ; /*kan vara smart att ha en färg för varje element så man lättare ser vad man gör för något.*/
     margin-top: 110px;
     float: left; /*alltid ha float left så att elementet hamnar nedanför*/
     max-width: 940px;
     padding: 0 5%;
+}
+
+#rumgallery img {
+  max-width: 100%
 }
 
 #rumgallery {
@@ -21,7 +25,9 @@
   color: #bdc3c7;
 }
 
-
-
-
-
+#rumgallery li a p {
+  margin: 0;
+  padding: 5px;
+  font-size: 0.75em;
+  color: #bdc3c7;
+}
