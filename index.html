@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/986342ab7c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"><!-- fonts -->
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div id="container">
+
+        <!-- Meny -->
+        <nav id="main-menu">
+            <figure id="branding">
+                <a href="#"><i class="fa fa-envira"></i></a>
+            </figure>
+            <ul>
+                <li><a href="#">Hem</a></li>
+                <li><a href="#">Våra rum</a></li>
+                <li><a href="#">Kalender</a></li>
+                <li><a href="#">Bildgalleri</a></li>
+                <li><a href="#">Hitta hit</a></li>
+            </ul>
+        </nav>
+
+        <!--Header med bilder -->
+        <header id="main-header">
+            <div class="inner-container">
+                <section id="site-heading">
+                    <i class="fa fa-envira"></i>
+                    <h1><span>H</span>otell - <span>D</span>en <span>g</span>lada <span>g</span>eten</h1>
+                    <h2>Bed and Breakfast</h2>
+                </section>
+            </div>
+        </header>
+
+        <!-- Galleri -->
+        <section id="start-gallery">
+            <div class="inner-container">
+                <h1>Galleri</h1>
+            </div>
+        </section>
+
+        <!--Kortare information om hotellet -->
+        <section id="main-content">
+            <div class="inner-container">
+                <section class="headings">
+                    <h2>Vad vi har att erbjuda</h2>
+                </section>
+                <article id="hotel-info-article">
+                    <p>lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
+                    lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
+                    lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
+                    lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
+                    lorem is a dummy text, lorem is a dummy text, lorem is a dummy text.
+                    lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
+                    lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
+                    lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
+                    lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
+                    lorem is a dummy text, lorem is a dummy text. </p>
+                </article>
+                <!--columns-->
+                <section id="hotel-info-col">
+                    <div class="box">
+                        <!--column 1-->
+                        <div class="col col_4_of_12">
+                            <h4>Trevlig miljö</h4>
+                            <i class="fa fa-tree"></i>
+                        </div>
+                        <!--column 2-->
+                        <div class="col col_4_of_12">
+                            <h4>Nyrenoverade rum</h4>
+                            <i class= "fa fa-bed"></i>
+                        </div>
+                        <!--column 3-->
+                        <div class="col col_4_of_12">
+                            <h4>Nära till staden</h4>
+                            <i class="fa fa-car"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Bokning -->
+        <section id="booking" class="invert">
+            <div class="inner-container">
+                <!-- left side -->
+                <section id="booking-left">
+                    <section id="booking-heading">
+                        <h2>Boka in dig här!</h2>
+                    </section>
+                </section>
+                <!-- right side -->
+                <section id="booking-right">
+                    <form class="booking-form">
+                        <!-- Datum -->
+                        <div class="date">
+                            <label>Från</label>
+                            <input type="date" required="">
+                            <label>Till</label>
+                            <input type="date" required="">
+                        </div>
+                        <!-- Rum -->
+                        <div class="options">
+                            <!-- Rum -->
+                            <section id="options-room">
+                                <label>Antal rum</label>
+                                <select>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5+">5+</option>
+                                </select>
+                            </section>
+                            <!-- Vuxna -->
+                            <section id="options-adults">
+                                <label>Antal Vuxna</label>
+                                <select>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5+">5+</option>
+                                </select>
+                            </section>
+                            <!-- Barn -->
+                            <section id="options-kids">
+                                <label>Antal barn</label>
+                                <select class="options-kids">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5+">5+</option>
+                                </select>
+                            </section>
+                        </div>
+                        <!-- Sök -->
+                        <section id="search">
+                            <input type="submit" name="submit" value="Sök">
+                        </section>
+                    </form>
+                </section>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="main-footer">
+            <div class="inner-container">
+                <section id="footer-info">
+                    <p>Kvarnbergsplan 16</p>
+                    <p>141, 45</p>
+                    <p>Huddinge, Stockholm</p>
+                    <span>&copy; 2016 Den Glada Geten</span>
+                </section>
+                <section id="footer-links">
+                    <ul>
+                        <li><a href="tel:076-5576319"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                        <li><a href="mailto:info@dengladageten.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                       </ul>
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
