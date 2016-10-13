@@ -1,0 +1,30 @@
+.footer {
+  font-size: 0.75em;
+  text-align:center;
+  clear: both;
+  padding: 10px 0;
+  bottom: 0;
+  color: #424242;
+  background-color: #fff;
+}
+
+.footer i {
+  font-size: 3em;
+  margin: 0.2em;
+  color: black;
+}
+
+.dgg {
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.1;
+  text-align: center;
+  font-family: 'Baloo Bhai', cursive;
+  color: #424242;
+}
+
+p {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 1.125em;
+  line-height: 90%;
+}

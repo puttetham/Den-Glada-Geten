@@ -8,6 +8,8 @@
    <script src="scripts\script.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"><!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
 </head>
 <body>
 
@@ -59,67 +61,88 @@
 </section>
 
 <!-- Bokning -->
-   <section id="booking">
-      <div class="box">
-         <form id="booking-form">
-            <!-- Datum -->
-            <div class="col col_6_of_12">
-               <label>Från</label>
-               <input type="date" required="">
-            </div>
-            <div class="col col_6_of_12">
-               <label>Till</label>
-               <input type="date" required="">
-            </div>
-            <!-- Rum -->
-            <div class="col col_3_of_12">
-               <label>Antal rum</label>
-               <select class="options-room">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5+">5+</option>
-               </select>
-            </div>
-            <!-- Vuxna -->
-            <div class="col col_3_of_12">
-               <label>Antal Vuxna</label>
-               <select class="options-adults">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5+">5+</option>
-               </select>
-            </div>
-            <!-- Barn -->
-            <div class="col col_3_of_12">
-               <label>Antal barn</label>
-               <select class="options-kids">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5+">5+</option>
-               </select>
-            </div>
-            <!-- Sök -->
-            <div class="col col_3_of_12">
-               <input type="submit" name="submit">
-            </div>
-         </form>
-      </div>
-   </section>
+<section id="booking" class="invert">
+   <div class="inner-container">
+      <!-- left side -->
+      <section id="booking-left">
+         <section id="booking-heading">
+            <h2>Boka in dig här!</h2>
+         </section>
+      </section>
+      <!-- right side -->
+      <section id="booking-right">
+            <form class="booking-form">
+               <!-- Datum -->
+               <div class="date">
+                  <label>Från</label>
+                  <input type="date" required="">
+                  <label>Till</label>
+                  <input type="date" required="">
+               </div>
+               <!-- Rum -->
+               <div class="options">
+                  <!-- Rum -->
+                  <section id="options-room">
+                     <label>Antal rum</label>
+                     <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                     </select>
+                  </section>
+                  <!-- Vuxna -->
+                  <section id="options-adults">
+                     <label>Antal Vuxna</label>
+                     <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                     </select>
+                  </section>
+                   <!-- Barn -->
+                  <section id="options-kids">
+                     <label>Antal barn</label>
+                     <select class="options-kids">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                     </select>
+                  </section>
+               </div>
+               <!-- Sök -->
+               <section id="search">
+                  <input type="submit" name="submit" value="Sök">
+               </section>
+            </form>
+      </section>
+   </div>
+</section>
 
 <!-- Footer -->
 <footer id="main-footer">
-   <div class="inner-container">
-      <span>Copyright © KYH, Grupp 6, All Rights Reserved</span>
-   </div>
-</footer>
 
+  <div class="footer">
+
+        <h2 class="dgg">Den Glada Geten</h2>
+        <p>
+          Kvarnbergsplan 16
+          <br>141, 45
+          <br> Huddinge, Stockholm
+        </p>
+        <p>&copy; 2016 Den Glada Geten.</p>
+        <a href="tel:076-5576319"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="mailto:info@dengladageten.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+</div>
+</footer>
 </div>
 
 </body>
