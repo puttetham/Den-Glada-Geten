@@ -2,6 +2,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
     color: #222;
+    text-transform: uppercase;
 }
 
 p, label {
@@ -70,4 +71,10 @@ p, label {
 #main-footer span {
     color: #222;
     font-family: 'Open Sans', sans-serif;
+}
+
+/*HITTA OSS*/
+.heading {
+	margin-top: 120px;
+	text-align: center;
 }

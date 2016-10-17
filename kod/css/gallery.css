@@ -1,0 +1,20 @@
+#lightbox .fa {
+  position: absolute;
+  top: 50%;
+  color:#fff;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#close {
+  position: absolute;
+  top:5%;
+  right:5%;
+}
+
+ #centerer {
+   display: inline-block;
+   height: 100%;
+   z-index: 2;
+     /*vertical-align: middle;*/
+}

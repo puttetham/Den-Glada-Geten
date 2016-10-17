@@ -29,7 +29,19 @@ body, html {
    width: 100%;
    height: 90px;
    position: fixed;
+   z-index: 9999; /*element med position relative/absolut inte ska overlap*/
    box-shadow: 2px 5px 5px #707070 ;
+}
+
+/*meny stylen för infosidorna*/
+#main-menu-ext {
+    background: #222;
+    max-width: 1500px;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 9999; /*element med position relative/absolut inte ska overlap*/
+    box-shadow: 2px 5px 5px #707070 ;
 }
 
 #start-gallery {
@@ -56,8 +68,18 @@ body, html {
    float: left;
 }
 
+/*footer stylen för huvudsidan*/
 #main-footer {
-   background: red;
+   background: #fff;
+   max-width: 1500px;
+   width: 100%;
+   height: 150px;
+   float: left;
+}
+
+/*footer stylen för infosidorna*/
+#main-footer-ext {
+   background: #222;
    max-width: 1500px;
    width: 100%;
    height: 150px;
