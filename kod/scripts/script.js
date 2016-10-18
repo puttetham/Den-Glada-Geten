@@ -9,9 +9,14 @@ $(function () {
         image.className = 'gallery-img';
         images.push(image);
     }
+    displayImages();
 // Rendera samtliga bilder i images på HTML-sidan i sektionen gallery
-    for (var i = 0; i < images.length; i++) {
-        $('#gallery').append(images[i]);
+    function displayImages() {
+        for (var i = 0; i < images.length; i++) {
+            var div = $('<div class="img-frame"></div>');
+            div.append(images[i]);
+            $('#gallery').append(div);
+        }
     }
 
     var i = 0;
