@@ -1,17 +1,18 @@
-/*footer stylen för huvudsidan*/
 #footer-info {
   font-family: 'Open Sans', sans-serif;
   float: left;
   padding: 20px;
+  color: #fff;
 }
 
 #footer-info p {
   line-height: 5px;
-  color: #222;
+  /*color: #fff;*/
+  font-size: 12px;
 }
 
 #footer-links ul {
-  margin-top: 100px;
+  margin-top: 75px;
   float: right;
 }
 
@@ -22,7 +23,7 @@
 }
 
 #footer-links a {
-  color: #222;
+  color: #fff;
   -webkit-transition: 0.3s;
   -webkit-o-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -30,40 +31,5 @@
 }
 
 #footer-links a:hover {
-    color: #7FFFD4;
-}
-
-/*footer stylen för infosidorna*/
-#footer-info-ext {
-  font-family: 'Open Sans', sans-serif;
-  float: left;
-  padding: 20px;
-}
-
-#footer-info-ext p, span {
-  line-height: 5px;
-  color: #fff;
-}
-
-#footer-links-ext ul {
-  margin-top: 100px;
-  float: right;
-}
-
-#footer-links-ext li {
-  list-style: none;
-  display: inline-block;
-  padding-right: 10px;
-}
-
-#footer-links-ext a {
-  color: #fff;
-  -webkit-transition: 0.3s;
-  -webkit-o-transition: 0.3s;
-  -moz-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#footer-links-ext a:hover {
     color: #7FFFD4;
 }

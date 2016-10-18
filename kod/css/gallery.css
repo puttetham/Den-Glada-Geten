@@ -1,20 +1,59 @@
+#gallery-content {
+  max-width: 1500px;
+  width: 100%;
+  height: 50%;
+  float: left;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+#gallery {
+    padding-top: 5em;
+    margin:auto;
+    max-width: 900px;
+}
+
+.gallery-img {
+    max-height: 150px;
+    margin:0,1em;
+}
+
+#lightbox {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    position:fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align: center;
+
+}
+
 #lightbox .fa {
-  position: absolute;
-  top: 50%;
-  color:#fff;
-  font-size: 2em;
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color:#fff;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 #close {
-  position: absolute;
-  top:5%;
-  right:5%;
+    position: absolute;
+    top:5%;
+    right:5%;
 }
 
- #centerer {
-   display: inline-block;
-   height: 100%;
-   z-index: 2;
-     /*vertical-align: middle;*/
+#centerer {
+    display: inline-block;
+    height: 100%;
+    z-index: 2;
+    /*vertical-align: middle;*/
+}
+
+#big-img {
+    margin-top:2em;
+    display: inline-block;
+    max-height: 80%;
 }
