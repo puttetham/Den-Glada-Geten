@@ -2,6 +2,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
     color: #222;
+    text-transform: uppercase;
 }
 
 p, label {
@@ -34,7 +35,7 @@ p, label {
 
 #site-heading {
 	text-align: center;
-	color: #222;
+	color: #fff;
 	line-height: 20px;
 	margin-top: 10px;
 }
@@ -46,10 +47,13 @@ p, label {
 #site-heading h1 {
 	text-transform: uppercase;
 	font-size: 30px;
+  color: #fff;
 }
 
 #site-heading h2 {
+  line-height: 25px;
 	font-size: 25px;
+  color: #fff;
 }
 
 #site-heading span {
@@ -62,42 +66,24 @@ p, label {
 	text-align: center;
 }
 
-.headings {
-    max-height: 1500px;
-    width: 100%;
-    padding: 10px 10px;
-}
-
-.headings h2 {
-    text-align: center;
-    text-transform: uppercase;
-}
-
+/*Hotell info*/
 #hotel-info-col h4 {
     text-transform: uppercase;
 }
 
 #main-footer span {
-    color: #222;
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }
 
-.headings {
-    max-height: 1500px;
-    width: 100%;
-    padding: 10px 10px;
+/* sidesides */
+.heading {
+  text-align: center;
 }
 
-.headings h2 {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#hotel-info-col h4 {
-    text-transform: uppercase;
-}
-
-#main-footer span {
-    color: #222;
-    font-family: 'Open Sans', sans-serif;
+/*gallery heading*/
+.gallery-heading {
+  text-align: center;
+  margin-top: 50px;
 }

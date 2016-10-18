@@ -46,11 +46,8 @@
 
 /*Other devices*/
 /*SMARTPAD*/
-@media only screen and(max-width: 800px) {
+@media only screen and (max-width: 800px) {
 	#main-menu ul {
 		display: none;
-	}
-	#branding {
-		text-align: center;
 	}
 }
