@@ -1,3 +1,4 @@
+// karta
 var map;
 var stockholm = {lat: 59.240, lng: 17.994};
 
