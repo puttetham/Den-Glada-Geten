@@ -1,0 +1,50 @@
+/*eftersom menyn har position fixed, hamnar elementen under. För att fixa det lägger man bara till en 'margin-top'*/
+#room-main-content {
+    background: ; /*kan vara smart att ha en färg för varje element så man lättare ser vad man gör för något.*/
+    margin: 110px auto 0;
+    float: left; /*alltid ha float left så att elementet hamnar nedanför*/
+    padding: 0 5%;
+}
+
+#rumgallery img {
+  max-width: 100%;
+  border: 2px solid #000;
+}
+
+#rumgallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  text-align: center;
+}
+
+#rumgallery li {
+  
+  display: inline-block;
+  width: 33%;
+  margin: 2.5%;
+  /*background-color: #eeeeee;*/
+}
+
+#rumgallery a {
+	text-decoration: none;
+}
+
+#rumgallery li a p {
+  margin: 0;
+  padding: 5px;
+  font-size: 0.75em;
+  color: #000;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.textinfo {
+  text-align: center;
+  padding: 15px;
+  margin: 0 15%;
+  font-size: 0.9em;
+  font-weight: normal;
+  font-family: 'Open Sans', serif;
+  border-top: 2px solid black;
+}
