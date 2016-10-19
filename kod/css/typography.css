@@ -1,23 +1,13 @@
 /*All vit text*/
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
+h1, h2, h3, h4, h5, h6, a {
     color: #222;
     text-transform: uppercase;
-}
-
-p, label {
-    font-family: 'Opens Sans', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
-    color: #222;
 }
 
 p, label {
-    font-family: 'Opens Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
-
 
 .invert {
 	color: #fff;
@@ -41,7 +31,7 @@ p, label {
 }
 
 #site-heading h1, #site-heading h2 {
-	font-family: 'Yatra One', sans-serif;
+  font-family: 'Yatra One', sans-serif;
 }
 
 #site-heading h1 {
@@ -64,6 +54,11 @@ p, label {
 #booking-heading h2 {
 	margin-top: 80px;
 	text-align: center;
+  color: #000
+}
+
+#booking {
+  color: #000;
 }
 
 /*Hotell info*/
