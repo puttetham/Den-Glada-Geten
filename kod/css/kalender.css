@@ -31,26 +31,14 @@
 
 #month {
   height: 5em;
-
 }
 
 #month-ul {
-
-
   text-align: center;
-  /*bottom: 0em;*/
   height: 4em;
 }
 
-/*div div ul li {
-  font-size: 25px;
-  position: relative;
-  bottom: 2.5em;
-  right: 1.15em;
-  font-family: Sans-serif;
-  font-weight: bold;
-  letter-spacing: px;
-}*/
+
 .rubrik {
   position: relative;
   bottom: 2.5em;
@@ -75,14 +63,3 @@
   font-size: 25px;
   font-weight: bold;
 }
-
-
-/*#month li {
-  text-align: center;
-  position: relative;
-  top: ;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #696969
-}*/
