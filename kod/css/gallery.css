@@ -9,9 +9,9 @@
 
 #gallery {
     margin: auto;
-    max-width: 875px;
+    max-width: 895px;
     overflow: hidden;
-    /*background-color: #ddd;*/
+    background-color: #ddd;
 }
 
 .img-frame {
