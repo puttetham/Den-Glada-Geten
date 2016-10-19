@@ -14,3 +14,7 @@
 .booking-form input[type="date"], select {
 	margin-bottom: 10px;
 }
+
+.options select {
+	margin-bottom: 10px;
+}
