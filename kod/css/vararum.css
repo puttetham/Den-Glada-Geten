@@ -3,7 +3,7 @@
     background: ; /*kan vara smart att ha en färg för varje element så man lättare ser vad man gör för något.*/
     margin: 110px auto 0;
     float: left; /*alltid ha float left så att elementet hamnar nedanför*/
-    padding: 0 5%;
+    padding: 0;
 }
 
 #rumgallery img {
@@ -23,7 +23,7 @@
   display: inline-block;
   width: 33%;
   margin: 2.5%;
-  /*background-color: #eeeeee;*/
+  
 }
 
 #rumgallery a {
@@ -31,8 +31,7 @@
 }
 
 #rumgallery li a p {
-  margin: 0;
-  padding: 5px;
+  
   font-size: 0.75em;
   color: #000;
   font-family: sans-serif;
@@ -42,9 +41,8 @@
 .textinfo {
   text-align: center;
   padding: 15px;
-  margin: 0 15%;
+  margin: 0 8%;
   font-size: 0.9em;
   font-weight: normal;
   font-family: 'Open Sans', serif;
-  border-top: 2px solid black;
 }
