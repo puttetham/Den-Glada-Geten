@@ -58,9 +58,10 @@ body, html {
 }
 
 #main-footer {
-   background: red;
-   max-width: 1500px;
-   width: 100%;
-   height: 150px;
-   float: left;
+  background: red;
+  max-width: 1500px;
+  width: 100%;
+  height: 150px;
+  float: left;
+
 }
