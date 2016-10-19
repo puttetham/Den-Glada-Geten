@@ -14,3 +14,25 @@ function initMap() {
       map: map
   });
 }
+
+//menu slide
+$(document).ready(function(){
+
+	var menu = $('#mobile-slide-menu')
+
+	$('#menu-bar').click(function(event){
+		event.preventDefault();
+
+		if (menu.is(":visible"))
+		{
+			menu.slideUp(400);
+			$(this).removeClass("open");
+		}
+
+		else
+		{
+			menu.slideDown(400);
+			$(this).addClass("open");
+		}
+	});
+});
