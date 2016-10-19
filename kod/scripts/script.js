@@ -1,6 +1,6 @@
 $(function () {
     var images = [];
-    var files = ['images/gallery-images/3lq7goxv.bmp', 'images/gallery-images/ybw4mnke.bmp', 'images/gallery-images/8dfqwfjw.bmp', 'images/gallery-images/snc18tji.bmp'];
+    var files = ['images/gallery-images/3lq7goxv.bmp', 'images/gallery-images/ybw4mnke.bmp', 'images/gallery-images/98699_ca_object_representations_media_2636_large.jpg', 'images/gallery-images/cropped-P1000045small.jpg', 'images/gallery-images/8dfqwfjw.bmp', 'images/gallery-images/stor_vandrarhem_rum3_stor.png', 'images/gallery-images/snc18tji.bmp'];
 
 // Lägger till befintliga bilder i variabeln images
     for (var i = 0; i < files.length; i++) {
@@ -14,7 +14,10 @@ $(function () {
     function displayImages() {
         for (var i = 0; i < images.length; i++) {
             var div = $('<div class="img-frame"></div>');
-            div.append(images[i]);
+            var img = images[i];
+            var imgClass = (img.height/img.width < 1) ? ' wide' : ' tall';
+            img.className += imgClass;
+            div.append(img);
             $('#gallery').append(div);
         }
     }
@@ -41,7 +44,7 @@ $(function () {
         $('#big-img').prop('src', images[i].src);
     });
 // Bläddra med piltangenterna
-    $('body').keydown(function(e) {
+    $('body').keyup(function(e) {
         if (e.keyCode == 37) {
             i--;
         }
