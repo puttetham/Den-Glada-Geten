@@ -97,7 +97,7 @@ width:100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0%;
+    bottom: 5%;
     width: 10%;
     height: 3em;
 }
