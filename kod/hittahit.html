@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hitta hit</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- icons -->
+  <script src="https://use.fontawesome.com/986342ab7c.js"></script>
+  <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <!-- scripts -->
+  <script src="Scripts/jquery-3.1.1.min.js"></script>
+  <!-- menu slide -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="js/all.js"></script>
+</head>
+<body>
+<div id="container">
+
+  <!-- Meny -->
+  <nav id="main-menu">
+      <figure id="branding">
+          <a href="index.html"><i class="fa fa-envira"></i></a>
+      </figure>
+      <!-- menu bar -->
+      <figure id="menu-bar">
+        <i class="fa fa-bars"></i>
+      </figure>
+      <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="vararum.html">Våra rum</a></li>
+          <li><a href="kalender.html">Kalender</a></li>
+          <li><a href="gallery.html">Bildgalleri</a></li>
+          <li><a href="#">Hitta hit</a></li>
+      </ul>
+  </nav>
+
+  <!-- slide down menu -->
+  <nav id="mobile-slide-menu">
+    <!-- menu list -->
+    <ul>
+      <ul>
+          <a href="index.html"><li>Hem</li></a>
+          <a href="vararum.html"><li>Våra rum</li></a>
+          <a href="kalender.html"><li>Kalender</li></a>
+          <a href="gallery.html"><li>Bildgalleri</li></a>
+          <a href="#"><li>Hitta hit</li></a>
+      </ul>
+    </ul>
+  </nav>
+    <!-- hitta hit sektion -->
+    <section id="find-us">
+        <div class="inner-container">
+            <section class="heading">
+                <h2>Hitta oss</h2>
+            </section>
+            <!-- karta    -->
+            <div id="map"></div>
+
+            <!-- directions -->
+            <section id="find-us-directions">
+                <!-- bilbeskrivning -->
+                <article class="direct">
+                    <section class="direct-head">
+                        <h5>Med bil</h5>
+                    </section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    </p>
+                </article>
+                <!-- kommunalbeskrivning -->
+                <article class="direct">
+                    <section class="direct-head">
+                        <h5>Kommunalt</h5>
+                    </section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    </p>
+                </article>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="inner-container">
+            <section id="footer-info">
+              <p>Kvarnbergsplan 16</p>
+              <p>141, 45</p>
+              <p>Huddinge, Stockholm</p>
+              <span>&copy; 2016 Den Glada Geten</span>
+            </section>
+            <section id="footer-links">
+                <ul>
+                    <li><a href="tel:076-5576319"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:info@dengladageten.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR9ZEQXLN4tVuIpfN5e4VK-VTw9VekHuU&callback=initMap"
+   async defer></script>
+</body>
+</html>
