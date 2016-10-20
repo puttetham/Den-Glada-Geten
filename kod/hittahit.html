@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
 	<title>Hitta hit</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
-    <!-- icons -->
-    <script src="https://use.fontawesome.com/986342ab7c.js"></script>
-    <script src="js/all.js" type="text/javascript"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- icons -->
+  <script src="https://use.fontawesome.com/986342ab7c.js"></script>
+  <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <!-- scripts -->
+  <script src="Scripts/jquery-3.1.1.min.js"></script>
+  <!-- menu slide -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="js/all.js"></script>
 </head>
 <body>
 <div id="container">
 
-	<!-- Meny -->
-    <nav id="main-menu">
-        <figure id="branding">
-            <a href="index.html"><i class="fa fa-envira"></i></a>
-        </figure>
-        <ul>
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="#">Våra rum</a></li>
-      	    <li><a href="#">Kalender</a></li>
-            <li><a href="gallery.html">Bildgalleri</a></li>
-            <li><a href="#">Hitta hit</a></li>
-         </ul>
-      </nav>
+  <!-- Meny -->
+  <nav id="main-menu">
+      <figure id="branding">
+          <a href="index.html"><i class="fa fa-envira"></i></a>
+      </figure>
+      <!-- menu bar -->
+      <figure id="menu-bar">
+        <i class="fa fa-bars"></i>
+      </figure>
+      <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="vararum.html">Våra rum</a></li>
+          <li><a href="kalender.html">Kalender</a></li>
+          <li><a href="gallery.html">Bildgalleri</a></li>
+          <li><a href="#">Hitta hit</a></li>
+      </ul>
+  </nav>
 
+  <!-- slide down menu -->
+  <nav id="mobile-slide-menu">
+    <!-- menu list -->
+    <ul>
+      <ul>
+          <a href="index.html"><li>Hem</li></a>
+          <a href="vararum.html"><li>Våra rum</li></a>
+          <a href="kalender.html"><li>Kalender</li></a>
+          <a href="gallery.html"><li>Bildgalleri</li></a>
+          <a href="#"><li>Hitta hit</li></a>
+      </ul>
+    </ul>
+  </nav>
     <!-- hitta hit sektion -->
     <section id="find-us">
         <div class="inner-container">

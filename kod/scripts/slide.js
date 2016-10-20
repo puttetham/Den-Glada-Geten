@@ -1,5 +1,5 @@
 var myIndex = 0;
-carousel();
+window.onload = carousel;
 
 function carousel() {
     var i;
