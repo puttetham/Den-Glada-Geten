@@ -1,12 +1,43 @@
+#gallery-content {
+  max-width: 1500px;
+  width: 100%;
+  height: 50%;
+  float: left;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
 #gallery {
-    padding-top: 2em;
-    margin:auto;
-    max-width:90%;
+    margin: auto;
+    max-width: 895px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.img-frame {
+    border: 2px solid #999;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    margin: 0em 0em 1em 1em;
 }
 
 .gallery-img {
-    max-height: 160px;
-    margin:0,1em;
+    vertical-align: top;
+    margin: auto;
+    cursor: pointer;
+}
+
+.wide {
+    height: 100%;
+}
+
+.tall {
+    /*max-height: 100%;*/
+    /*max-width: 100%;*/
+    width:100%;
 }
 
 .start-gallery
@@ -17,41 +48,66 @@ width:100%;
 #lightbox {
     display: none;
     background-color: rgba(0, 0, 0, 0.9);
-    position:fixed;
+    position: fixed;
     z-index: 1;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     text-align: center;
-
 }
 
 #lightbox .fa {
-    position: absolute;
-    top: 50%;
-    color:#fff;
+    color: #fff;
     font-size: 2em;
     cursor: pointer;
 }
 
+#lightbox-inner {
+    position: relative;
+    opacity: 0.9;
+    margin: 90px auto;
+    background-color: #000;
+    height: 80%;
+    max-width: 990px;
+    padding: 0 5% 5%;
+}
+
 #close {
-    position: absolute;
-    top:5%;
-    right:5%;
+    float: right;
+    position: relative;
+    top: 7%;
+    right: 2%;
 }
 
 #centerer {
     display: inline-block;
-    height: 100%;
-    z-index: 2;
-    /*vertical-align: middle;*/
+    margin-top: 5em;
+    height: 22em;
 }
 
 #big-img {
-    margin-top:2em;
+    /*margin-top:2em;*/
     display: inline-block;
-    max-height: 80%;
+    max-width: 100%;
+    height: 100%;
+}
+
+#controls {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
+    width: 10%;
+    height: 3em;
+}
+
+#arrow-right {
+    float: right;
+}
+
+#arrow-left {
+    float: left;
 }
 
 .mySlides {display:none;}
