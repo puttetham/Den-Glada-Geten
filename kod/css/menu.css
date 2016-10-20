@@ -46,7 +46,7 @@
 
 #menu-bar {
 	float: right;
-	/*display: none;*/
+	display: none;
 	margin-top: 35px;
 }
 
