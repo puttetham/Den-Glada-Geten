@@ -46,6 +46,14 @@ $(document).ready(function () {
         $('#lightbox').css('display', 'none');
     });
 
+    $('#lightbox-inner').on('click', function(e) {
+        if (e.target !== this) {
+            return;
+        }
+        $('#lightbox').css('display', 'none');
+    });
+
+
     $('#lightbox').on('click', function(e) {
         if (e.target !== this) {
             return;
