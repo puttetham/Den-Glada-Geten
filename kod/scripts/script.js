@@ -46,7 +46,8 @@ $(document).ready(function () {
         $('#lightbox').css('display', 'none');
     });
 
-    $('#lightbox').on('click', function(e) {
+  
+    $('#lightbox, #lightbox-inner, #centerer').on('click', function(e) {
         if (e.target !== this) {
             return;
         }
