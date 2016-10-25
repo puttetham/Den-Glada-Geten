@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- icons -->
     <script src="https://use.fontawesome.com/986342ab7c.js"></script>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet"> -->
+    <!--scripts-->
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <!-- menu slide -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/slide.js"></script>
+    <script src="js/all.js"></script>
+
   </head>
   <body>
     <div id="container">
@@ -44,34 +53,42 @@
 
     <!-- Det är smart att sätta id på varje "sektion" av hemsidan, kolla in min struktur för exempel :) -->
     <section id="room-main-content">
+      <div id="lightbox">
+        <div id="lightbox-inner">
+          <div id="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <div id="centerer">
+            <img id="big-img" src="" />
+          </div>
+        </div>
+      </div>
     <article class="textinfo">
      <p>
 
-      Proin tempus, nulla et tincidunt aliquet, risus dolor congue leo, in tincidunt felis elit dictum metus. Sed eget efficitur tortor. Fusce vitae magna ornare risus egestas rutrum. Proin vehicula congue rhoncus. Quisque interdum mi id leo dignissim, ac porttitor turpis blandit. Nulla nec feugiat mi, at porttitor orci. Ut vitae felis vitae ex hendrerit interdum eget vehicula ante. Morbi eu leo id diam hendrerit vehicula. Phasellus mattis feugiat lacinia. Quisque dapibus odio sit amet ante placerat, in condimentum nisl tincidunt. Ut fermentum condimentum mauris. Nulla congue iaculis hendrerit. Pellentesque id fringilla nunc. In suscipit euismod metus. 
+      Proin tempus, nulla et tincidunt aliquet, risus dolor congue leo, in tincidunt felis elit dictum metus. Sed eget efficitur tortor. Fusce vitae magna ornare risus egestas rutrum. Proin vehicula congue rhoncus. Quisque interdum mi id leo dignissim, ac porttitor turpis blandit. Nulla nec feugiat mi, at porttitor orci. Ut vitae felis vitae ex hendrerit interdum eget vehicula ante. Morbi eu leo id diam hendrerit vehicula. Phasellus mattis feugiat lacinia. Quisque dapibus odio sit amet ante placerat, in condimentum nisl tincidunt. Ut fermentum condimentum mauris. Nulla congue iaculis hendrerit. Pellentesque id fringilla nunc. In suscipit euismod metus.
       <br>
       <br>
-      Pellentesque massa dui, lobortis quis rutrum quis, aliquam ac eros. Vivamus et luctus libero. Nam malesuada, sapien ac lobortis lacinia, velit felis ullamcorper sem, in euismod augue urna ac justo. Mauris risus eros, faucibus ut magna sed, malesuada ultricies sem. Praesent laoreet efficitur bibendum. Suspendisse semper commodo cursus 
+      Pellentesque massa dui, lobortis quis rutrum quis, aliquam ac eros. Vivamus et luctus libero. Nam malesuada, sapien ac lobortis lacinia, velit felis ullamcorper sem, in euismod augue urna ac justo. Mauris risus eros, faucibus ut magna sed, malesuada ultricies sem. Praesent laoreet efficitur bibendum. Suspendisse semper commodo cursus
      </p>
      </article>
       <ul id="rumgallery">
         <li>
-          <a href="images/rum/enkelrum.jpg">
-          <img src="images/rum/enkelrum.jpg">
+          <!-- <a href="images/rum/enkelrum.jpg"> -->
+          <img class="gallery-img"src="images/rum/enkelrum.jpg">
           <p> Enkelrum 695:-</p>
         </li>
         <li>
-          <a href="images/rum/dubbelrum.jpg">
-          <img src="images/rum/dubbelrum.jpg">
+          <!-- <a href="images/rum/dubbelrum.jpg"> -->
+          <img class="gallery-img"src="images/rum/dubbelrum.jpg">
           <p> Dubbelrum 895:-</p>
         </li>
         <li>
-          <a href="images/rum/trippelrum.jpg">
-          <img src="images/rum/trippelrum.jpg">
+          <!-- <a href="images/rum/trippelrum.jpg"> -->
+          <img class="gallery-img"src="images/rum/trippelrum.jpg">
           <p> Dubbelrum Deluxe 995:- </p>
         </li>
         <li>
-          <a href="images/rum/familjerum.jpg">
-          <img src="images/rum/familjerum.jpg">
+          <!-- <a href="images/rum/familjerum.jpg"> -->
+          <img class="gallery-img"src="images/rum/familjerum.jpg">
           <p> Familjerum 1100:- </p>
         </li>
       </ul>
