@@ -9,25 +9,14 @@ p, label {
   font-family: 'Open Sans', sans-serif;
 }
 
-.invert {
-	color: #fff;
-}
-
-.invert i, .invert h1, .invert h2 {
-	color: #fff;
-}
-
-.invert i {
-	font-size: 30px;
-}
-
 /*Huvudsidans titel*/
 
 #site-heading {
 	text-align: center;
-	color: #fff;
 	line-height: 20px;
-	margin-top: 10px;
+	margin-top: 60px;
+  text-transform: uppercase;
+  color: #222;
 }
 
 #site-heading h1, #site-heading h2 {
@@ -35,15 +24,12 @@ p, label {
 }
 
 #site-heading h1 {
-	text-transform: uppercase;
 	font-size: 30px;
-  color: #fff;
 }
 
 #site-heading h2 {
   line-height: 25px;
 	font-size: 25px;
-  color: #fff;
 }
 
 #site-heading span {

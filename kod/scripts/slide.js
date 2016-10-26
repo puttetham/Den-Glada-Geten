@@ -10,5 +10,5 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 4000); // Byter bild var 4:e sekund.
+    setTimeout(carousel, 7000); // Byter bild var 4:e sekund.
 }

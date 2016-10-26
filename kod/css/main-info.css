@@ -15,6 +15,35 @@
     padding: 5px 10px;
 }
 
-#hotel-info-col .box {
-    text-align: center;
+.hotel-column {
+  text-align: center;
+}
+
+.hotel-column img {
+  width: 75%;
+}
+
+.col_4_of_12:nth-child(4) {
+  margin-left: auto;
+}
+
+.boknings-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.boknings-button a {
+  border: 2px solid #222;
+  padding: 5px 10px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+-webkit-o-transition: 0.3s;
+-moz-transition: 0.3s;
+transition: 0.3s;
+}
+
+.boknings-button a:hover {
+  border: 2px solid #3CD632;
+  color: #3CD632;
 }
