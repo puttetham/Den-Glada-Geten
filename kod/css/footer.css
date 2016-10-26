@@ -1,8 +1,8 @@
 #footer-info {
   font-family: 'Open Sans', sans-serif;
   float: left;
-  padding: 20px;
   color: #fff;
+  margin-top: 10px;
 }
 
 #footer-info p {
@@ -31,5 +31,5 @@
 }
 
 #footer-links a:hover {
-    color: #7FFFD4;
+    color: #3CD632;
 }

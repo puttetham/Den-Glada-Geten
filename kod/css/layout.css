@@ -21,10 +21,11 @@ body, html {
 }
 
 #main-header {
-   background: #222;
+   background: url('../images/header-img.jpg') fixed;
+   background-size: cover;
    max-width: 1500px;
    width: 100%;
-   height: 50%;
+   height: 180px;
    margin-top: 90px;
    float: left;
 }
@@ -43,7 +44,7 @@ body, html {
    background: #888;
    max-width: 1500px;
    width: 100%;
-   height: 400px;
+   height: 50%;
    float: left;
 }
 
@@ -56,19 +57,10 @@ body, html {
    float: left;
 }
 
-#booking {
-   background: #7FFFD4;
-   max-width: 1500px;
-   width: 100%;
-   height: 50%;
-   padding-bottom: 20px;
-   float: left;
-}
-
 #main-footer {
    background: #222;
    max-width: 1500px;
    width: 100%;
-   height: 200px;
+   height: 50%;
    float: left;
 }

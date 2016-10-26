@@ -59,8 +59,7 @@
         <header id="main-header">
             <div class="inner-container">
                 <section id="site-heading">
-                    <i class="fa fa-envira"></i>
-                    <h1><span>H</span>otell - <span>D</span>en <span>g</span>lada <span>g</span>eten</h1>
+                    <h1><span>D</span>en <span>g</span>lada <span>g</span>eten</h1>
                     <h2>Bed and Breakfast</h2>
                 </section>
             </div>
@@ -69,13 +68,10 @@
         <!-- Galleri -->
         <section id="start-gallery">
                 <div class="slideshow" style="width:100", vertical-align="middle">
-                <img class="mySlides" src="images/1.jpg" style="width:100%" height= "400px;">
-                <img class="mySlides" src="images/2.jpg" style="width:100%" height= "400px;"> 
-                <img class="mySlides" src="images/3.jpg" style="width:100%" height= "400px;">
+                  <img class="mySlides" src="images/1.jpg" style="width:100%" height= "100%;">
+                  <img class="mySlides" src="images/2.jpg" style="width:100%" height= "100%;">
+                  <img class="mySlides" src="images/3.jpg" style="width:100%" height= "100%;">
                 </div>
-
-            
-
         </section>
 
         <!--Kortare information om hotellet -->
@@ -84,6 +80,10 @@
                 <section class="heading">
                     <h2>Vad vi har att erbjuda</h2>
                 </section>
+                <!-- till bokningsidan -->
+                <div class="boknings-button">
+                  <a href="kalender.html">Boka här!</a>
+                </div>
                 <article id="hotel-info-article">
                     <p>lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
                     lorem is a dummy text, lorem is a dummy text, lorem is a dummy text,
@@ -98,89 +98,55 @@
                 </article>
                 <!--columns-->
                 <section id="hotel-info-col">
-                    <div class="box">
-                        <!--column 1-->
-                        <div class="col col_4_of_12">
-                            <h4>Trevlig miljö</h4>
-                            <i class="fa fa-tree"></i>
-                        </div>
-                        <!--column 2-->
-                        <div class="col col_4_of_12">
-                            <h4>Nyrenoverade rum</h4>
-                            <i class= "fa fa-bed"></i>
-                        </div>
-                        <!--column 3-->
-                        <div class="col col_4_of_12">
-                            <h4>Nära till staden</h4>
-                            <i class="fa fa-car"></i>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
-
-        <!-- Bokning -->
-        <section id="booking" class="invert">
-            <div class="inner-container">
-                <!-- left side -->
-                <section id="booking-left">
-                    <section id="booking-heading">
-                        <h2>Boka in dig här!</h2>
+                  <div class="box">
+                    <!-- col 1 -->
+                    <section class="col col_4_of_12">
+                      <article class="hotel-column">
+                        <h4>Getklappning</h4>
+                        <img src="images/pet-goats.jpg"/>
+                      </article>
                     </section>
+                    <!-- col 2 -->
+                    <section class="col col_4_of_12">
+                      <article class="hotel-column">
+                        <h4>Nyrenoverade rum</h4>
+                        <img src="images/rooms.jpg"/>
+                      </article>
+                    </section>
+                    <!-- col 3 -->
+                    <section class="col col_4_of_12">
+                      <article class="hotel-column">
+                        <h4>Trevlig miljö</h4>
+                        <img src="images/nature.jpg"/>
+                      </article>
+                    </section>
+                    <!-- col 4 -->
+                    <section class="col col_4_of_12">
+                      <article class="hotel-column">
+                        <h4>Getmatning</h4>
+                        <img src="images/feed-goats.jpg"/>
+                      </article>
+                    </section>
+                    <!-- col 5 -->
+                    <section class="col col_4_of_12">
+                      <article class="hotel-column">
+                        <h4>Skogspromenader</h4>
+                        <img src="images/walks.jpg"/>
+                      </article>
+                    </section>
+                    <!-- col 6 -->
+                    <section class="col col_4_of_12">
+                      <article class="hotel-column">
+                        <h4>Spa</h4>
+                        <img src="images/spa.jpg"/>
+                      </article>
+                    </section>
+                  </div>
                 </section>
-                <!-- right side -->
-                <section id="booking-right">
-                    <form class="booking-form">
-                        <!-- Datum -->
-                        <div class="date">
-                            <label>Från</label>
-                            <input type="date" required="">
-                            <label>Till</label>
-                            <input type="date" required="">
-                        </div>
-                        <!-- Rum -->
-                        <div class="options">
-                            <!-- Rum -->
-                            <section id="options-room">
-                                <label>Antal rum</label>
-                                <select>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5+">5+</option>
-                                </select>
-                            </section>
-                            <!-- Vuxna -->
-                            <section id="options-adults">
-                                <label>Antal Vuxna</label>
-                                <select>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5+">5+</option>
-                                </select>
-                            </section>
-                            <!-- Barn -->
-                            <section id="options-kids">
-                                <label>Antal barn</label>
-                                <select class="options-kids">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5+">5+</option>
-                                </select>
-                            </section>
-                        </div>
-                        <!-- Sök -->
-                        <section id="search">
-                            <input type="submit" name="submit" value="Sök">
-                        </section>
-                    </form>
-                </section>
+                <!-- till bokningsidan -->
+                <div class="boknings-button">
+                  <a href="kalender.html">Boka här!</a>
+                </div>
             </div>
         </section>
 
