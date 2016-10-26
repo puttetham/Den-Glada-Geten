@@ -41,12 +41,13 @@ $(document).ready(function () {
         console.log(i);
         $('#big-img').prop('src', images[i].src);
     })
-// Stäng ner expanderad bild genom att klicka på krysset eller på lightbox-diven
+// Stäng ner expanderad bild genom att klicka på krysset, lightbox, lightbox-inner eller centerer-diven
     $('#close').on('click', function() {
         $('#lightbox').css('display', 'none');
     });
 
-    $('#lightbox').on('click', function(e) {
+
+    $('#lightbox, #lightbox-inner, #centerer').on('click', function(e) {
         if (e.target !== this) {
             return;
         }
