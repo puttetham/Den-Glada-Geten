@@ -57,14 +57,3 @@ p, label {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
 }
-
-/* sidesides */
-.heading {
-  text-align: center;
-}
-
-/*gallery heading*/
-.gallery-heading {
-  text-align: center;
-  margin-top: 50px;
-}
