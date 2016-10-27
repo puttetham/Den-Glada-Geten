@@ -41,7 +41,7 @@ body, html {
 }
 
 #start-gallery {
-   background: #888;
+   border: 2px solid #222;
    max-width: 1500px;
    width: 100%;
    height: 50%;
