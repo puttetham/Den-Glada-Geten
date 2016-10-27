@@ -47,6 +47,11 @@ p, label {
   color: #000;
 }
 
+/*INFO*/
+.heading {
+  text-align: center;
+}
+
 /*Hotell info*/
 #hotel-info-col h4 {
     text-transform: uppercase;

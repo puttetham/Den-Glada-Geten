@@ -21,6 +21,11 @@
 
 .hotel-column img {
   width: 75%;
+  transition: all .2s ease-in-out;
+}
+
+.hotel-column img:hover {
+  transform: scale(1.1);
 }
 
 .col_4_of_12:nth-child(4) {
