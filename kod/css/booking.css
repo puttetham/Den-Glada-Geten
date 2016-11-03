@@ -18,3 +18,50 @@
 .options select {
 	margin-bottom: 10px;
 }
+
+#book-now {
+	margin-top: 120px;
+	margin-bottom: 20px;
+	max-width: 1500px;
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin-bottom: 20px;
+	background: #fff;
+}
+
+#booking-div {
+	max-width: 600px;
+	margin:auto;
+}
+
+#booking-div input {
+	height: 30px;
+	width: 47%;
+	margin: 0 5px 10px 5px;
+}
+
+#booking-div label{
+	margin-left: 5px;
+}
+
+.booking-date{
+  width: 49%;
+  display: inline-block;
+}
+
+#submit {
+	height: 35px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	background: #1d6618;
+	border: none;
+}
+
+@media screen and (max-width: 716px) {
+	#booking-div input {
+		width: 100%;
+	}
+}
