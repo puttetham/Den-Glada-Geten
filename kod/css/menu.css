@@ -4,7 +4,7 @@
 }
 
 #branding i {
-	color: #222;
+	color: #fff;
 	font-size: 30px;
      -webkit-transition: 0.3s;
 	-webkit-o-transition: 0.3s;
@@ -37,7 +37,7 @@
 }
 
 #main-menu a:hover {
-    color: #3CD632;
+    color: #888;
 }
 
 #menu-bar {
@@ -59,14 +59,14 @@
 	width: 100%;
 	height: 280px;
 	padding: 20px;
-	margin-top: 75px;
+	top: 75px;
 	position: fixed;
 	z-index: 9999;
 }
 
 #mobile-slide-menu li {
 	padding: 10px;
-	border-bottom: 1px solid #7FFFD4;
+	border-bottom: 1px solid #3CD632;
 	list-style: none;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .selected:hover {
-	border-color: #3CD632;
+	/*border-color: #3CD632;*/
 }
 
 /*Other devices*/
@@ -95,7 +95,7 @@
 
 	#main-menu {
 		box-shadow: none;
-		border-bottom: 1px solid #7FFFD4;
+		border-bottom: 1px solid #3CD632;
 	}
 
 	#menu-bar {

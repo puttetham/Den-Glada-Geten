@@ -21,7 +21,7 @@ body, html {
 }
 
 #main-header {
-   background: url('../images/header-img.jpg') fixed;
+   background: #fff;
    background-size: cover;
    max-width: 1500px;
    width: 100%;
@@ -37,7 +37,7 @@ body, html {
    height: 90px;
    position: fixed;
    z-index: 9999;
-   box-shadow: 2px 5px 5px #707070 ;
+   box-shadow: 2px 5px 5px #909090 ;
 }
 
 #start-gallery {
