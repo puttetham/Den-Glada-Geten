@@ -47,6 +47,11 @@ p, label {
   color: #000;
 }
 
+/*INFO*/
+.heading {
+  text-align: center;
+}
+
 /*Hotell info*/
 #hotel-info-col h4 {
     text-transform: uppercase;
@@ -56,15 +61,4 @@ p, label {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
-}
-
-/* sidesides */
-.heading {
-  text-align: center;
-}
-
-/*gallery heading*/
-.gallery-heading {
-  text-align: center;
-  margin-top: 50px;
 }
