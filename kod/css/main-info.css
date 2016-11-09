@@ -20,6 +20,7 @@
 }
 
 .hotel-column img {
+  cursor: pointer;
   width: 75%;
   transition: all .2s ease-in-out;
 }
