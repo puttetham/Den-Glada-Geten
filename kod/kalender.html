@@ -66,6 +66,7 @@
       <h2>Boka ditt rum här!</h2>
     </section>
     <!-- kalender form-->
+    <div id="booking-div">
         <form name="booking-form">
           <input class="text-input" title="Fyll i ditt förnamn" type="text" name="first-name" placeholder="Förnamn" required="" />
           <input class="text-input" title="Fyll i ditt efternamn" type="text" name="last-name" placeholder="Efternamn" required="" />
@@ -77,17 +78,18 @@
           <div>
             <div class="booking-date">
               <label for="arrival-date">Från</label><br />
-              <input name="arrival-date" placeholder="yyyy-mm-dd" type="text"/>
+              <input class="datepicker" name="arrival-date" placeholder="åååå-mm-dd" type="text" required=""/>
             </div>
             <div class="booking-date">
               <label for="depart-date">Till</label><br />
-              <input name="depart-date" placeholder="yyyy-mm-dd" type="text"/>
+              <input class="datepicker" name="depart-date" placeholder="åååå-mm-dd" type="text" required=""/>
             </div>
           </div>
           <br />
           <br />
           <input id="submit" class="boknings-button" type="submit" value="Boka">
         </form>
+    </div>
   </div>
 </section>
 

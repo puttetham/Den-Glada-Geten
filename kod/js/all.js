@@ -36,7 +36,8 @@ $(document).ready(function(){
 		}
 	});
   //KALENDER
-  $("#date-from").datepicker({
+  $(".datepicker").datepicker({
+    dateFormat: "yy-mm-dd",
     minDate: 0
   });
 });
