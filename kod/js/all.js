@@ -1,6 +1,6 @@
 // karta
 var map;
-var stockholm = {lat: 59.240, lng: 17.994};
+var stockholm = {lat: 65.660, lng: 21.975};
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
