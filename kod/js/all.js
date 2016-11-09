@@ -35,4 +35,8 @@ $(document).ready(function(){
 			$(this).addClass("open");
 		}
 	});
+  //KALENDER
+  $("#date-from").datepicker({
+    minDate: 0
+  });
 });
