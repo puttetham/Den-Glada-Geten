@@ -57,8 +57,6 @@ $(document).ready(function () {
     //Bestäm om bilden är bredare än den är hög
     function determineImgClass() {
         var imgClass = ((this.height/this.width) < 1) ? ' wide' : ' tall';
-        console.log(this);
-        console.log(this.height/this.width);
         return this.className += imgClass;
     }
 
