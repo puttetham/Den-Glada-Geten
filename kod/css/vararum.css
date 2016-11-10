@@ -1,8 +1,7 @@
-/*eftersom menyn har position fixed, hamnar elementen under. För att fixa det lägger man bara till en 'margin-top'*/
 #room-main-content {
-    background: ; /*kan vara smart att ha en färg för varje element så man lättare ser vad man gör för något.*/
+    background: ; 
     margin: 110px auto 0;
-    float: left; /*alltid ha float left så att elementet hamnar nedanför*/
+    float: left; 
     padding: 0;
 }
 
