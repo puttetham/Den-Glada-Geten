@@ -18,7 +18,7 @@ function initMap() {
 //menu slide
 $(document).ready(function(){
 
-	var menu = $('#mobile-slide-menu')
+	var menu = $('#mobile-slide-menu');
 
 	$('#menu-bar').click(function(event){
 		event.preventDefault();
@@ -35,9 +35,4 @@ $(document).ready(function(){
 			$(this).addClass("open");
 		}
 	});
-  //KALENDER
-  $(".datepicker").datepicker({
-    dateFormat: "yy-mm-dd",
-    minDate: 0
-  });
 });

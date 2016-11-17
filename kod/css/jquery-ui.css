@@ -295,7 +295,7 @@
 }
 .ui-widget-header {
 	border: 1px solid #209218;
-	background: #3CD632;
+	background: #1d6618; /*previous color: #3CD632*/
 	color: #ffffff;
 	font-weight: bold;
 }
