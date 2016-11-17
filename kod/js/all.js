@@ -35,24 +35,4 @@ $(document).ready(function(){
 			$(this).addClass("open");
 		}
 	});
-  //KALENDER
-  $(".datepicker").datepicker({
-    dateFormat: "yy-mm-dd",
-    dayNames: ['Söndag', 'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'],
-    dayNamesMin: ['Sön', 'Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör', 'Sön'],
-    firstDay: 1,
-    monthNames: ['Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni', 'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December'],
-
-    });
-
-    $('#arrival-date').datepicker({
-        minDate: new Date(),
-        onSelect: function(date){
-            var selectedDate = new Date(date);
-            var msecsInADay = 86400000;
-            var endDate = new Date(selectedDate.getTime() + msecsInADay);
-
-            $("#depart-date").datepicker( "option", "minDate", endDate );
-        }
-    });
 });

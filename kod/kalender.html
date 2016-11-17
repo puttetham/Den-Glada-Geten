@@ -25,6 +25,9 @@
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
    <script src="js/all.js"></script>
    <script src="js/jquery-ui.min.js"></script>
+   <!-- booking and validation -->
+   <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+   <script src="js/booking.js"></script>
 </head>
 <body>
 
@@ -67,27 +70,33 @@
     </section>
     <!-- kalender form-->
     <div id="booking-div">
-        <form name="booking-form">
-          <input class="text-input" title="Fyll i ditt förnamn" type="text" name="first-name" placeholder="Förnamn" required="" />
-          <input class="text-input" title="Fyll i ditt efternamn" type="text" name="last-name" placeholder="Efternamn" required="" />
+        <form id="booking-form" name="booking-form" metod="post" action="">
+          <input class="text-input" title="Fyll i ditt förnamn" type="text" name="firstname" placeholder="Förnamn" />
+          <input class="text-input" title="Fyll i ditt efternamn" type="text" name="lastname" placeholder="Efternamn"  />
           <br />
-          <input class="text-input" title="Fyll i ditt epost-adress" type="email" name="email" placeholder="E-postadress" required="" />
-          <input class="text-input" title="Bekräfta e-postadress" type="email" name="confirm-email" placeholder="Bekräfta e-postadress" required="" />
-          <input type="number" title="Fyll i antal rum" placeholder="Antal rum" min="1" max="8" required="" />
-          <input type="number" title="Fyll i antal gäster" placeholder="Antal gäster" min="1" max="12" required="" />
-          <div>
-            <div class="booking-date">
-              <label for="arrival-date">Från</label><br />
-              <input id="arrival-date" class="datepicker" name="arrival-date" placeholder="åååå-mm-dd" type="text" required=""/>
+          <input id="email" class="text-input" title="Fyll i din epost-adress" type="email" name="email" placeholder="E-postadress"  />
+          <input class="text-input" title="Bekräfta e-postadress" type="email" name="confirm_email" placeholder="Bekräfta e-postadress"  />
+          <select class="booking-select required" name="roomtype">
+              <option value="" selected disabled>Välj rum</option>
+              <option value="single">Enkelrum</option>
+              <option value="double">Dubbelrum</option>
+              <option value="family">Familjerum</option>
+          </select>
+          <!--<input type="number" name="rooms" title="Fyll i antal rum" placeholder="Antal rum" min="1" max="8"  />
+          <input type="number" name="guests" title="Fyll i antal gäster" placeholder="Antal gäster" min="1" max="12"  />-->
+          <div class="booking-date">
+            <div>
+              <label for="arrival_date">Från</label><br />
+              <input id="arrival-date" class="datepicker" name="arrival_date" placeholder="åååå-mm-dd" type="text" />
             </div>
-            <div class="booking-date">
-              <label for="depart-date">Till</label><br />
-              <input id="depart-date" class="datepicker" name="depart-date" placeholder="åååå-mm-dd" type="text" required=""/>
+            <div>
+              <label for="depart_date">Till</label><br />
+              <input id="depart-date" class="datepicker" name="depart_date" placeholder="åååå-mm-dd" type="text" />
             </div>
           </div>
           <br />
           <br />
-          <input id="submit" class="boknings-button" type="submit" value="Boka">
+          <input class="submit boknings-button" type="submit" value="Boka">
         </form>
     </div>
   </div>
