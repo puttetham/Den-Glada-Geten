@@ -2,15 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Den glada geten - Bo med getter och njut i vårat spa</title>
+   <title>Den glada geten admin</title>
    <meta charset="utf-8" />
    <meta name="title" content="Den glada geten - Ett unikt hotell med modern design och med lantligt utsikt">
-   <meta name="description" content="Boka ett billigt rum, mys med getter och slappna av i vårat spa">
-   <meta name="keywords" content="hotell, billigt, moderna rum, spa, getter, mysigt, landsbygden">
-   <meta name="author" content="KYH Stockholm - Frontendstudents">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- stylesheet -->
-   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="../kod/style.css">
+   <link rel="stylesheet" type="text/css" href="../kod/css/admin.css">
    <!-- icons -->
    <script src="https://use.fontawesome.com/986342ab7c.js"></script>
    <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
@@ -41,22 +39,64 @@
                 $_SESSION['admin'] = FALSE;
             }
 
+            ///////////////////////////
+            //RUN IF LOGGED IN
+            ///////////////////////////
             if(isset($_SESSION['admin']) && $_SESSION['admin'] == TRUE) {
                 $db = mysqli_connect('localhost', 'root', '', 'den_glada_geten');
 
-                include 'admin_index.html';
+                //////////////////////////////////////
+                //Print text from database in textareas
+                $text_array = array();
+
+                $query = "SELECT text_content
+                        FROM text_table
+                ";
+
+                $result = mysqli_query($db, $query);
+                while ( $row = mysqli_fetch_array ($result) ) {
+                    array_push($text_array, $row['text_content']);
+                }
+                ////////////////////////////////////
+
+                if (isset($_GET['page'])) {
+                    switch ($_GET['page']) {
+                        case 'admin.php':
+                            include 'text_admin.php';
+                            break;
+                        case 'images.php':
+                            include 'img_admin.php';
+                            break;
+                        case 'images.php':
+                            include 'reservations_admin';
+                            break;
+                    }
+                }
+                else {
+                    include 'text_admin.php';
+                }
+
                 if ( isset($_POST['about-text']) ) {
 
                     $text = $_POST['about-text'];
 
                     $query = "UPDATE text_table
                             SET text_content = '$text'
-                            WHERE ID = 2
-
-
+                            WHERE ID = 1
                     ";
                     mysqli_query($db, $query);
-                };
+                }
+
+                if ( isset($_POST['vararum-text']) ) {
+
+                    $text = $_POST['vararum-text'];
+
+                    $query = "UPDATE text_table
+                            SET text_content = '$text'
+                            WHERE ID = 2
+                    ";
+                    mysqli_query($db, $query);
+                }
             }
             else {
                 echo "
