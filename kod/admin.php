@@ -44,47 +44,19 @@
             if(isset($_SESSION['admin']) && $_SESSION['admin'] == TRUE) {
                 $db = mysqli_connect('localhost', 'root', '', 'den_glada_geten');
 
-                echo '
-                    <!-- Meny -->
-                    <nav id="main-menu">
-                        <figure id="branding">
-                            <a href="#"><i class="fa fa-envira"></i></a>
-                        </figure>
-                        <!-- menu bar -->
-                        <figure id="menu-bar">
-                          <i class="fa fa-bars"></i>
-                        </figure>
-                        <ul>
-                            <li><a class="selected" href="#">Hem</a></li>
-                            <li><a href="vararum.html">Våra rum</a></li>
-                            <li><a href="kalender.html">Boka rum</a></li>
-                            <li><a href="gallery.html">Bildgalleri</a></li>
-                            <li><a href="hittahit.html">Hitta hit</a></li>
-                        </ul>
-                    </nav>
+                include 'admin_index.html';
+                if ( isset($_POST['about-text']) ) {
 
-                    <!-- slide down menu -->
-                    <nav id="mobile-slide-menu">
-                      <!-- menu list -->
-                      <ul>
-                          <a href="#"><li>Hem</li></a>
-                          <a href="vararum.html"><li>Våra rum</li></a>
-                          <a href="kalender.html"><li>Boka rum</li></a>
-                          <a href="gallery.html"><li>Bildgalleri</li></a>
-                          <a href="hittahit.html"><li>Hitta hit</li></a>
-                      </ul>
-                    </nav>
+                    $text = $_POST['about-text'];
 
-                    <section id="main-content" style="margin-top: 200px">
-                        <div class="inner-container">
-                        <h2>Om hotellet</h2>
-                            <form name="index-about">
-                                <textarea name="about-text"></textarea>
-                                <submit type="submit"></submit>
-                            </form>
-                        </div>
-                    </section>
-                ';
+                    $query = "UPDATE text_table
+                            SET text_content = '$text'
+                            WHERE ID = 2
+
+
+                    ";
+                    mysqli_query($db, $query);
+                };
             }
             else {
                 echo "
