@@ -38,7 +38,6 @@ $(document).ready(function () {
         if(i > images.length -1) {
             i = 0;
         }
-        console.log(i);
         $('#big-img').prop('src', images[i].src);
     })
 // Stäng ner expanderad bild genom att klicka på krysset, lightbox, lightbox-inner eller centerer-diven

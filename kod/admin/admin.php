@@ -7,8 +7,8 @@
    <meta name="title" content="Den glada geten - Ett unikt hotell med modern design och med lantligt utsikt">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- stylesheet -->
-   <link rel="stylesheet" type="text/css" href="../kod/style.css">
-   <link rel="stylesheet" type="text/css" href="../kod/css/admin.css">
+   <link rel="stylesheet" type="text/css" href="../style.css">
+   <link rel="stylesheet" type="text/css" href="../css/admin.css">
    <!-- icons -->
    <script src="https://use.fontawesome.com/986342ab7c.js"></script>
    <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
@@ -27,86 +27,118 @@
 </head>
 <body>
     <div id="container">
+        <!-- Meny -->
+        <nav id="main-menu">
+            <figure id="branding">
+                <a href="#"><i class="fa fa-envira"></i></a>
+            </figure>
+            <!-- menu bar -->
+            <figure id="menu-bar">
+              <i class="fa fa-bars"></i>
+            </figure>
+            <ul>
+                <li><a class="selected" href="admin.php">Text</a></li>
+                <li><a href="admin.php?page=images">Bilder</a></li>
+                <li><a href="admin.php?page=reservations">Bokningar</a></li>
+            </ul>
+        </nav>
 
-        <?php
-            if(isset($_POST['password'])) {
-                if($_POST['password'] == 'get') {
-                    $_SESSION['admin'] = TRUE;
+        <!-- slide down menu -->
+        <nav id="mobile-slide-menu">
+          <!-- menu list -->
+          <ul>
+              <a href="#"><li>Hem</li></a>
+              <a href="vararum.html"><li>Våra rum</li></a>
+              <a href="kalender.html"><li>Boka rum</li></a>
+              <a href="gallery.html"><li>Bildgalleri</li></a>
+              <a href="hittahit.html"><li>Hitta hit</li></a>
+          </ul>
+        </nav>
+
+        <section id="main-content" style="margin-top: 200px">
+            <div class="inner-container">
+
+            <?php
+                if(isset($_POST['password'])) {
+                    if($_POST['password'] == 'get') {
+                        $_SESSION['admin'] = TRUE;
+                    }
                 }
-            }
 
-            if(isset($_POST['logout'])) {
-                $_SESSION['admin'] = FALSE;
-            }
-
-            ///////////////////////////
-            //RUN IF LOGGED IN
-            ///////////////////////////
-            if(isset($_SESSION['admin']) && $_SESSION['admin'] == TRUE) {
-                $db = mysqli_connect('localhost', 'root', '', 'den_glada_geten');
-
-                //////////////////////////////////////
-                //Print text from database in textareas
-                $text_array = array();
-
-                $query = "SELECT text_content
-                        FROM text_table
-                ";
-
-                $result = mysqli_query($db, $query);
-                while ( $row = mysqli_fetch_array ($result) ) {
-                    array_push($text_array, $row['text_content']);
+                if(isset($_POST['logout'])) {
+                    $_SESSION['admin'] = FALSE;
                 }
-                ////////////////////////////////////
 
-                if (isset($_GET['page'])) {
-                    switch ($_GET['page']) {
-                        case 'admin.php':
-                            include 'text_admin.php';
-                            break;
-                        case 'images.php':
-                            include 'img_admin.php';
-                            break;
-                        case 'images.php':
-                            include 'reservations_admin';
-                            break;
+                ///////////////////////////
+                //RUN IF LOGGED IN
+                ///////////////////////////
+                if(isset($_SESSION['admin']) && $_SESSION['admin'] == TRUE) {
+                    $db = mysqli_connect('localhost', 'root', '', 'den_glada_geten');
+
+                    //////////////////////////////////////
+                    //Print text from database in textareas
+                    $text_array = array();
+
+                    $query = "SELECT text_content
+                            FROM text_table
+                    ";
+
+                    $result = mysqli_query($db, $query);
+                    while ( $row = mysqli_fetch_array ($result) ) {
+                        array_push($text_array, $row['text_content']);
+                    }
+                    ////////////////////////////////////
+
+                    if (isset($_GET['page'])) {
+                        switch ($_GET['page']) {
+                            case 'admin.php':
+                                include 'text_admin.php';
+                                break;
+                            case 'images':
+                                include 'img_admin.php';
+                                break;
+                            case 'images.php':
+                                include 'reservations_admin';
+                                break;
+                        }
+                    }
+                    else {
+                        include 'text_admin.php';
+                    }
+
+                    if ( isset($_POST['about-text']) ) {
+
+                        $text = $_POST['about-text'];
+
+                        $query = "UPDATE text_table
+                                SET text_content = '$text'
+                                WHERE ID = 1
+                        ";
+                        mysqli_query($db, $query);
+                    }
+
+                    if ( isset($_POST['vararum-text']) ) {
+
+                        $text = $_POST['vararum-text'];
+
+                        $query = "UPDATE text_table
+                                SET text_content = '$text'
+                                WHERE ID = 2
+                        ";
+                        mysqli_query($db, $query);
                     }
                 }
                 else {
-                    include 'text_admin.php';
-                }
-
-                if ( isset($_POST['about-text']) ) {
-
-                    $text = $_POST['about-text'];
-
-                    $query = "UPDATE text_table
-                            SET text_content = '$text'
-                            WHERE ID = 1
+                    echo "
+                        <form method='post' action=''>
+                            <input type='password' name='password'>
+                            <input type='submit' value='Logga in'>
+                        </form>
                     ";
-                    mysqli_query($db, $query);
                 }
-
-                if ( isset($_POST['vararum-text']) ) {
-
-                    $text = $_POST['vararum-text'];
-
-                    $query = "UPDATE text_table
-                            SET text_content = '$text'
-                            WHERE ID = 2
-                    ";
-                    mysqli_query($db, $query);
-                }
-            }
-            else {
-                echo "
-                    <form method='post' action=''>
-                        <input type='password' name='password'>
-                        <input type='submit' value='Logga in'>
-                    </form>
-                ";
-            }
-        ?>
+            ?>
+            </div>
+        </section>
     </div>
 </body>
 </html>
