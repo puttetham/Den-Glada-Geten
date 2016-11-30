@@ -3,3 +3,12 @@
     height: 150px;
     font-family: 'Open Sans', sans-serif;
 }
+
+.logout {
+    margin-top: 100px;
+}
+
+.frame-div {
+    display: inline-block;
+    height: 200px;
+}
