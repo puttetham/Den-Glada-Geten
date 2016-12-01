@@ -1,4 +1,4 @@
-<h2>Om hotellet</h2>
+<h2>Välkommen!</h2>
 <form method="post">
     <input name="page" type="hidden" value="index">
     <textarea name="content" class="admin-textarea"><?php echo $text_array[0]; ?></textarea>

@@ -94,9 +94,9 @@
     <footer id="main-footer">
         <div class="inner-container">
             <section id="footer-info">
-                <p>Kvarnbergsplan 16</p>
-                <p>141, 45</p>
-                <p>Huddinge, Stockholm</p>
+                <p>Gamla Bodenvägen 301</p>
+                <p>954 42</p>
+                <p>Södra Sunderbyn, Sverige</p>
                 <span>&copy; Den glada geten 2016</span>
             </section>
             <section id="footer-links">

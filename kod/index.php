@@ -62,7 +62,7 @@ $content = mysqli_fetch_assoc($result);
           <!-- menu list -->
           <ul>
               <a href="#"><li>Hem</li></a>
-              <a hrefboka.html"><li>Våra rum</li></a>
+              <a href="vararum.php"><li>Våra rum</li></a>
               <a href="boka.html"><li>Boka rum</li></a>
               <a href="gallery.php"><li>Bildgalleri</li></a>
               <a href="hittahit.html"><li>Hitta hit</li></a>
@@ -92,7 +92,7 @@ $content = mysqli_fetch_assoc($result);
         <section id="main-content">
             <div class="inner-container">
               <section class="heading">
-                <h2>Om hotellet</h2>
+                <h2>Välkommen!</h2>
               </section>
                 <!-- till bokningsidan -->
                 <div class="boknings-button">
@@ -121,8 +121,8 @@ $content = mysqli_fetch_assoc($result);
                     <!-- col 2 -->
                     <section class="col col_4_of_12">
                       <article class="hotel-column">
-                        <h4>Nyrenoverade rum</h4>
-                        <img src="images/rooms.jpg"/>
+                        <h4>Skotersafari</h4>
+                        <img src="images/snowmobile.jpg"/>
                       </article>
                     </section>
                     <!-- col 3 -->
@@ -166,9 +166,9 @@ $content = mysqli_fetch_assoc($result);
         <footer id="main-footer">
             <div class="inner-container">
                 <section id="footer-info">
-                    <p>Kvarnbergsplan 16</p>
-                    <p>141, 45</p>
-                    <p>Huddinge, Stockholm</p>
+                    <p>Gamla Bodenvägen 301</p>
+                    <p>954 42</p>
+                    <p>Södra Sunderbyn, Sverige</p>
                     <span>&copy; Den glada geten 2016</span>
                 </section>
                 <section id="footer-links">

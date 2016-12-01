@@ -16,7 +16,7 @@ if( isset($_FILES['user_file']) ) {
         echo "Filen är uppladdad";
     }
     else {
-        echo "Uppladdningen misslyckades. Bilden måste vara mindre än 3MB";
+        echo "Uppladdningen misslyckades";
     }
 }
 ?>
@@ -28,10 +28,10 @@ if( isset($_FILES['user_file']) ) {
             $filename = $_POST['delete_file'];
             if (file_exists($filename)) {
                 unlink($filename);
-                echo "Bilden är raderad";
+                // echo "Bilden är raderad";
             }
             else {
-                echo "Det gick inte att radera bilden, ".$filename." finns inte";
+                // echo "Det gick inte att radera bilden, ".$filename." finns inte";
             }
         }
 

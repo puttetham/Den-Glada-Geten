@@ -85,34 +85,39 @@ $content = mysqli_fetch_assoc($result);
          ?>
        </p>
        </article>
-        <ul id="rumgallery">
-          <li>
-            <img class="gallery-img"src="images/rum/enkelrum2.jpeg">
-            <p> Enkelrum 695:- / natt</p>
-          </li>
-          <li>
-            <img class="gallery-img"src="images/rum/dubbelrum2.jpeg">
-            <p> Dubbelrum 795:- / natt</p>
-          </li>
-          <li>
-            <img class="gallery-img"src="images/rum/dubbelrum3.jpeg">
-            <p> Dubbelrum Deluxe 895:- / natt</p>
-          </li>
-          <li>
-            <img class="gallery-img"src="images/rum/familjerum.jpeg">
-            <p> Familjerum 999:- / natt </p>
-          </li>
-        </ul>
+       <div class="box">
+         <!-- col 1 -->
+         <section class="col col_4_of_12">
+           <article class="hotel-column">
+             <h4>Enkelrum 695:- / natt</h4>
+             <img class="gallery-img" src="images/rum/enkelrum2.jpeg"/>
+           </article>
+         </section>
+         <!-- col 2 -->
+         <section class="col col_4_of_12">
+           <article class="hotel-column">
+             <h4>Dubbelrum 795:- / natt</h4>
+             <img class="gallery-img" src="images/rum/dubbelrum2.jpeg"/>
+           </article>
+         </section>
+         <!-- col 3 -->
+         <section class="col col_4_of_12">
+           <article class="hotel-column">
+             <h4>Familjerum 999:- / natt </h4>
+             <img class="gallery-img" src="images/rum/familjerum.jpeg"/>
+           </article>
+         </section>
+       </div>
       </section>
 
       <!-- Footer -->
       <footer id="main-footer">
           <div class="inner-container">
               <section id="footer-info">
-                <p>Kvarnbergsplan 16</p>
-                <p>141, 45</p>
-                <p>Huddinge, Stockholm</p>
-                <span>&copy; 2016 Den Glada Geten</span>
+                  <p>Gamla Bodenvägen 301</p>
+                  <p>954 42</p>
+                  <p>Södra Sunderbyn, Sverige</p>
+                  <span>&copy; Den glada geten 2016</span>
               </section>
               <section id="footer-links">
                   <ul>
