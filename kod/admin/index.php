@@ -56,6 +56,12 @@ include 'page_top.php';
         else {
             include 'text_admin.php';
         }
+
+        echo "
+            <form method='post' action=''>
+                <input type='submit' name='logout' value='Logga ut'>
+            </form>
+        ";
     }
     else {
         echo "

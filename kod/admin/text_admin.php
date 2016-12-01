@@ -14,8 +14,3 @@
     <br>
     <input type="submit"></input>
 </form>
-
-
-<form method='post' action=''>
-    <input type='submit' name='logout' value='Logga ut'>
-</form>
