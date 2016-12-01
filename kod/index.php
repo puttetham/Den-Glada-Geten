@@ -81,11 +81,11 @@ $content = mysqli_fetch_assoc($result);
 
         <!-- Galleri -->
         <section id="start-gallery">
-                <div class="slideshow" style="width:100", vertical-align="middle">
-                  <img class="mySlides" src="images/1.jpg" style="width:100%" height= "100%;">
-                  <img class="mySlides" src="images/2.jpg" style="width:100%" height= "100%;">
-                  <img class="mySlides" src="images/3.jpg" style="width:100%" height= "100%;">
-                </div>
+            <div class="slideshow">
+              <img class="mySlides" src="images/1.jpg" style="width:100%" height= "100%;">
+              <img class="mySlides" src="images/2.jpg" style="width:100%" height= "100%;">
+              <img class="mySlides" src="images/3.jpg" style="width:100%" height= "100%;">
+            </div>
         </section>
 
         <!--Kortare information om hotellet -->
