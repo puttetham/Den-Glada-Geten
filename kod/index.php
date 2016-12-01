@@ -51,8 +51,8 @@ $content = mysqli_fetch_assoc($result);
             <ul>
                 <li><a class="selected" href="#">Hem</a></li>
                 <li><a href="vararum.php">Våra rum</a></li>
-                <li><a href="kalender.html">Boka rum</a></li>
-                <li><a href="gallery.html">Bildgalleri</a></li>
+                <li><a href="boka.html">Boka rum</a></li>
+                <li><a href="gallery.php">Bildgalleri</a></li>
                 <li><a href="hittahit.html">Hitta hit</a></li>
             </ul>
         </nav>
@@ -62,9 +62,9 @@ $content = mysqli_fetch_assoc($result);
           <!-- menu list -->
           <ul>
               <a href="#"><li>Hem</li></a>
-              <a href="vararum.php"><li>Våra rum</li></a>
-              <a href="kalender.html"><li>Boka rum</li></a>
-              <a href="gallery.html"><li>Bildgalleri</li></a>
+              <a hrefboka.html"><li>Våra rum</li></a>
+              <a href="boka.html"><li>Boka rum</li></a>
+              <a href="gallery.php"><li>Bildgalleri</li></a>
               <a href="hittahit.html"><li>Hitta hit</li></a>
           </ul>
         </nav>
@@ -96,7 +96,7 @@ $content = mysqli_fetch_assoc($result);
               </section>
                 <!-- till bokningsidan -->
                 <div class="boknings-button">
-                  <a href="kalender.html">Boka rum!</a>
+                  <a href="boka.html">Boka rum!</a>
                 </div>
                 <article id="hotel-info-article">
                     <p>
@@ -157,7 +157,7 @@ $content = mysqli_fetch_assoc($result);
                 </section>
                 <!-- till bokningsidan -->
                 <div class="boknings-button">
-                  <a href="kalender.html">Boka aktivitet!</a>
+                  <a href="boka.html">Boka aktivitet!</a>
                 </div>
             </div>
         </section>

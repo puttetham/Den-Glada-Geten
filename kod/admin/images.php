@@ -21,7 +21,7 @@ if( isset($_FILES['user_file']) ) {
 }
 ?>
 
-<section id="gallery">
+<section id="gallery" style="margin-top: 25px">
     <?php
 
         if (isset($_POST['delete_file'])) {
@@ -34,12 +34,12 @@ if( isset($_FILES['user_file']) ) {
                 echo "Det gick inte att radera bilden, ".$filename." finns inte";
             }
         }
-        
+
         $src = '../images/gallery-images/*';
         foreach (glob($src) as $image) {
             echo
             "
-            <div>
+            <div class='gallery-div'>
                 <form method='post'>
                     <input type='hidden' value='".$image."' name='delete_file' />
                     <input type='submit' value='Radera bild'>

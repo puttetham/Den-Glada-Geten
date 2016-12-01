@@ -29,16 +29,16 @@
     <!-- Meny -->
     <nav id="main-menu">
         <figure id="branding">
-            <a href="index.html"><i class="fa fa-envira"></i></a>
+            <a href="index.php"><i class="fa fa-envira"></i></a>
         </figure>
         <!-- menu bar -->
         <figure id="menu-bar">
           <i class="fa fa-bars"></i>
         </figure>
         <ul>
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="vararum.html">Våra rum</a></li>
-            <li><a href="kalender.html">Boka rum</a></li>
+            <li><a href="index.php">Hem</a></li>
+            <li><a href="vararum.php">Våra rum</a></li>
+            <li><a href="boka.html">Boka rum</a></li>
             <li><a class="selected" href="#">Bildgalleri</a></li>
             <li><a href="hittahit.html">Hitta hit</a></li>
         </ul>
@@ -49,9 +49,9 @@
       <!-- menu list -->
       <ul>
         <ul>
-            <a href="index.html"><li>Hem</li></a>
-            <a href="vararum.html"><li>Våra rum</li></a>
-            <a href="kalender.html"><li>Boka rum</li></a>
+            <a href="index.php"><li>Hem</li></a>
+            <a href="vararum.php"><li>Våra rum</li></a>
+            <a href="boka.html"><li>Boka rum</li></a>
             <a href="#"><li>Bildgalleri</li></a>
             <a href="hittahit.html"><li>Hitta hit</li></a>
         </ul>

@@ -1,10 +1,9 @@
 $(document).ready(function () {
-    // var images = [];
-    // var files = ['images/gallery-images/1.jpeg', 'images/gallery-images/2.jpg', 'images/gallery-images/3.jpg', 'images/gallery-images/4.jpg', 'images/gallery-images/5.jpg', 'images/gallery-images/6.jpg', 'images/gallery-images/7.jpg', 'images/gallery-images/8.jpg', 'images/gallery-images/9.jpg', 'images/gallery-images/10.jpg'];
-    // var i = 0;
-    // renderGallery();
-    $('.gallery-img').each(function() {
+
+    $('.gallery-img').one('load', function() {
         determineImgClass(this);
+    }).each(function() {
+        if(this.complete) $(this).load();
     });
 
     //Bestäm om bilden är bredare än den är hög
@@ -18,39 +17,48 @@ $(document).ready(function () {
 // Expandera klickad bild på skärmen
     $('.gallery-img').on('click', function() {
         $('#big-img').prop('src', this.src);
-        i = $(this).index();
+        // i = $(this).index();
         $('#lightbox').css('display', 'block');
     });
 
-// Bläddra med pilarna på skärmen
     $('.arrow').on('click', function() {
-        this.id == 'arrow-right' ? i++ : i--;
-        if(i < 0) {
-            i = images.length -1;
-        }
-        if(i > images.length -1) {
-            i = 0;
-        }
-
-        $('#big-img').prop('src', images[i].src);
+        $('#big-img').prop('src', nextImg( $('#big-img').prop('src') ) );
     });
+
+    function nextImg(image) {
+        console.log($('.gallery-img[src="' + image + '"]'));
+        // var theimage = $('.gallery-img').find(image).next();
+        // return theimage;
+    }
+
+// Bläddra med pilarna på skärmen
+    // $('.arrow').on('click', function() {
+    //     this.id == 'arrow-right' ? i++ : i--;
+    //     if(i < 0) {
+    //         i = images.length -1;
+    //     }
+    //     if(i > images.length -1) {
+    //         i = 0;
+    //     }
+    //     $('#big-img').prop('src', images[i].src);
+    // });
 // Bläddra med piltangenterna
-    $('body').keyup(function(e) {
-        if (e.keyCode == 37) {
-            i--;
-        }
-        if (e.keyCode == 39) {
-            i++;
-        }
-
-        if(i < 0) {
-            i = images.length -1;
-        }
-        if(i > images.length -1) {
-            i = 0;
-        }
-        $('#big-img').prop('src', images[i].src);
-    });
+    // $('body').keyup(function(e) {
+    //     if (e.keyCode == 37) {
+    //         i--;
+    //     }
+    //     if (e.keyCode == 39) {
+    //         i++;
+    //     }
+    //
+    //     if(i < 0) {
+    //         i = images.length -1;
+    //     }
+    //     if(i > images.length -1) {
+    //         i = 0;
+    //     }
+    //     $('#big-img').prop('src', images[i].src);
+    // });
 
     // Stäng ner expanderad bild genom att klicka på krysset, lightbox, lightbox-inner eller centerer-diven
     $('#close').on('click', function() {

@@ -12,3 +12,11 @@
     display: inline-block;
     height: 200px;
 }
+
+.gallery-div {
+    display: inline-block;
+}
+
+.gallery-div form {
+    margin-left: 1em;
+}
