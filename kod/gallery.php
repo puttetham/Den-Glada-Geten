@@ -29,16 +29,16 @@
     <!-- Meny -->
     <nav id="main-menu">
         <figure id="branding">
-            <a href="index.html"><i class="fa fa-envira"></i></a>
+            <a href="index.php"><i class="fa fa-envira"></i></a>
         </figure>
         <!-- menu bar -->
         <figure id="menu-bar">
           <i class="fa fa-bars"></i>
         </figure>
         <ul>
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="vararum.html">Våra rum</a></li>
-            <li><a href="kalender.html">Boka rum</a></li>
+            <li><a href="index.php">Hem</a></li>
+            <li><a href="vararum.php">Våra rum</a></li>
+            <li><a href="boka.html">Boka rum</a></li>
             <li><a class="selected" href="#">Bildgalleri</a></li>
             <li><a href="hittahit.html">Hitta hit</a></li>
         </ul>
@@ -49,9 +49,9 @@
       <!-- menu list -->
       <ul>
         <ul>
-            <a href="index.html"><li>Hem</li></a>
-            <a href="vararum.html"><li>Våra rum</li></a>
-            <a href="kalender.html"><li>Boka rum</li></a>
+            <a href="index.php"><li>Hem</li></a>
+            <a href="vararum.php"><li>Våra rum</li></a>
+            <a href="boka.html"><li>Boka rum</li></a>
             <a href="#"><li>Bildgalleri</li></a>
             <a href="hittahit.html"><li>Hitta hit</li></a>
         </ul>
@@ -75,7 +75,17 @@
         </div>
 
         <section id="gallery">
-
+            <?php
+                $src = 'images/gallery-images/*';
+                foreach (glob($src) as $image) {
+                    echo
+                        "
+                        <div class='img-frame'>
+                            <img class='gallery-img' src='$image'></img>
+                        </div>
+                    ";
+                }
+            ?>
         </section>
       </div>
     </section>
@@ -84,15 +94,15 @@
     <footer id="main-footer">
         <div class="inner-container">
             <section id="footer-info">
-                <p>Gamla Bodenvägen 301</p>
-                <p>954 42</p>
-                <p>Södra Sunderbyn, Sverige</p>
+                <p>Kvarnbergsplan 16</p>
+                <p>141, 45</p>
+                <p>Huddinge, Stockholm</p>
                 <span>&copy; Den glada geten 2016</span>
             </section>
             <section id="footer-links">
                 <ul>
-                    <li><a href="tel:076-1112223"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-                    <li><a href="mailto:glada.geten@kyh.se"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    <li><a href="tel:076-5576319"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:info@dengladageten.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                    </ul>
             </section>

@@ -1,0 +1,22 @@
+.admin-textarea {
+    width: 80%;
+    height: 150px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logout {
+    margin-top: 100px;
+}
+
+.frame-div {
+    display: inline-block;
+    height: 200px;
+}
+
+.gallery-div {
+    display: inline-block;
+}
+
+.gallery-div form {
+    margin-left: 1em;
+}
