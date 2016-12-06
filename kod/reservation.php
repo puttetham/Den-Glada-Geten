@@ -16,7 +16,7 @@
         $roomtype = $_POST['roomtype'];
         $arrival_date = $_POST['arrival_date'];
         $depart_date = $_POST['depart_date'];
-
+        $activity = $_POST['aktivitet'];
 
         // Get all rooms of the selected room type
         $query = "SELECT *
@@ -50,8 +50,8 @@
 
             //If no conflicting reservations were found, go through with the reservation!
             if ($isvacant) {
-                $reservquery = "INSERT INTO reservations(room, first_name, last_name, email, reserved_from, reserved_to)
-                VALUES ('$desiredroom', '$firstname', '$lastname', '$email', '$arrival_date', '$depart_date')";
+                $reservquery = "INSERT INTO reservations(room, first_name, last_name, email, reserved_from, reserved_to, activity)
+                VALUES ('$desiredroom', '$firstname', '$lastname', '$email', '$arrival_date', '$depart_date', '$activity[0]')";
 
                 mysqli_query($db, $reservquery);
 
@@ -63,5 +63,6 @@
             }
         }
         echo $response;
+        echo $activity;
     }
 ?>
