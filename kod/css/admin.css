@@ -20,3 +20,38 @@
 .gallery-div form {
     margin-left: 1em;
 }
+
+.table-container {
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+th {
+    background: #1d6618;
+}
+
+th a {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #fff;
+}
+
+td {
+    font-family: 'Open Sans', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table, th, td {
+    border: 1px solid #888;
+    padding: 5px;
+}

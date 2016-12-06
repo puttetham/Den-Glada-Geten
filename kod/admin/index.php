@@ -18,8 +18,7 @@ include 'page_top.php';
     //RUN IF LOGGED IN
     ///////////////////////////
     if(isset($_SESSION['admin'])) {
-        $db = mysqli_connect('localhost', 'root', '', 'den_glada_geten');
-
+        require_once '../config.php';
         if ( isset($_POST['content']) ) {
 
             $content = $_POST['content'];

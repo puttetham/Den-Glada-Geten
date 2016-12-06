@@ -1,5 +1,5 @@
 <?php
-    $db = mysqli_connect('localhost', 'root', '', 'den_glada_geten');
+    require_once 'config.php';
 
     if(isset($_POST['firstname'],
             $_POST['lastname'],

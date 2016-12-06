@@ -1,5 +1,6 @@
 <?php
-$db = mysqli_connect('localhost', 'root', '', 'den_glada_geten');
+require_once 'config.php';
+
 $query = "SELECT text_content
         FROM text_table
         WHERE ID = 1
