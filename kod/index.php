@@ -217,5 +217,6 @@ $content = mysqli_fetch_assoc($result);
             </div>
         </footer>
     </div>
+    <script src="scripts/flip.js"></script>
 </body>
 </html>
