@@ -14,7 +14,7 @@
 	margin:auto;
 }
 
-#booking-div input, .booking-select {
+#booking-div input[type="text"], input[type="email"], .booking-select {
 	height: 30px;
 	width: 50%;
 	margin: 10px 5px 0 5px;
@@ -59,10 +59,10 @@
 	border-color: red;
 }
 
-@media screen and (max-width: 716px) {
-	#booking-div input {
-		width: 100%;
-	}
+	@media screen and (max-width: 516px) {
+	#booking-div input[type="text"], input[type="email"], .booking-select {
+	width: 100%;
+}
 
 	.booking-date {
 		width: 100%;

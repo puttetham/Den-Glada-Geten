@@ -65,11 +65,12 @@
     <!--Kalender-->
   <section id="kalender-section">
   <div class="inner-container">
-    <section class="sect-heading">
-      <h2>Boka ditt rum här!</h2>
-    </section>
+
     <!-- kalender form-->
     <div id="booking-div">
+      <section class="sect-heading">
+        <h2>Boka ditt rum här!</h2>
+      </section>
         <form id="booking-form" name="booking-form" method="post" action="reservation.php">
           <input class="text-input" title="Fyll i ditt förnamn" type="text" name="firstname" placeholder="Förnamn" />
           <input class="text-input" title="Fyll i ditt efternamn" type="text" name="lastname" placeholder="Efternamn"  />
@@ -94,8 +95,17 @@
               <input id="depart-date" class="datepicker" name="depart_date" placeholder="åååå-mm-dd" type="text" />
             </div>
           </div>
-          <input type="checkbox" name="aktivitet[]" value="skotersafari"> Skotersafari<br>
-          <input type="checkbox" name="aktivitet[]" value="getmatning" checked> Getmatning<br>
+          <div class="activities">
+            <h2>Boka en aktivitet!</h2>
+            <input type="checkbox" name="activity[]" value="skotersafari"><label>Skotersafari</label><br>
+            <input type="checkbox" name="activity[]" value="getmatning"><label>Getmatning</label><br>
+            <input type="checkbox" name="activity[]" value="getklappning"><label>Getklappning</label><br>
+            <input type="checkbox" name="activity[]" value="guidad_vandring"><label>Guidad vandring</label><br>
+            <input type="checkbox" name="activity[]" value="spa"><label>SPA</label><br>
+            <input type="checkbox" name="activity[]" value="massage"><label>Massage</label><br>
+            <input type="checkbox" name="activity[]" value="kurbad"><label>Kurbad</label><br>
+            <input type="checkbox" name="activity[]" value="badtunna"><label>Badtunna</label><br>
+          </div>
           <br />
           <br />
           <input class="submit boknings-button" type="submit" value="Boka">
