@@ -19,7 +19,7 @@
    <!-- scripts -->
    <!-- menu slide -->
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-   <script src="scripts/script.js"></script>
+   <script src="scripts/gallery.js"></script>
    <script src="js/all.js"></script>
 </head>
 <body>
@@ -68,8 +68,8 @@
                     <img id="big-img" src="" />
                 </div>
                 <div id="controls">
-                    <span><i id="arrow-left" class="arrow fa fa-step-backward" aria-hidden="true"></i><span>
-                    <span><i id="arrow-right" class="arrow fa fa-step-forward" aria-hidden="true"></i><span>
+                    <span><i id="arrow-left" class="arrow fa fa-chevron-left" aria-hidden="true"></i><span>
+                    <span><i id="arrow-right" class="arrow fa fa-chevron-right" aria-hidden="true"></i><span>
                 </div>
             </div>
         </div>

@@ -17,7 +17,6 @@ $(document).ready(function () {
 // Expandera klickad bild på skärmen
     $('.gallery-img').on('click', function() {
         $('#big-img').prop('src', this.src);
-        // i = $(this).index();
         $('#lightbox').css('display', 'block');
     });
 
