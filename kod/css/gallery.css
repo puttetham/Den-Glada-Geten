@@ -11,21 +11,22 @@
     margin: auto;
     max-width: 895px;
     overflow: hidden;
+    text-align: center;
 }
 
 .img-frame {
-    border: 1px solid #222;
+    border: 1px solid #666;
     width: 200px;
-    height: 200px;
+    /*height: 200px;*/
     display: inline-block;
-    float: left;
     overflow: hidden;
     margin: 0em 0em 1em 1em;
 }
 
 .gallery-img {
-    vertical-align: top;
-    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
 }
 
@@ -105,3 +106,10 @@
 }
 
 .mySlides {display:none;}
+
+@media screen and (max-width: 491px) {
+    .img-frame {
+        width: 90%;
+        margin: 1em auto;
+    }
+}

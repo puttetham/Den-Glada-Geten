@@ -31,6 +31,14 @@ var Gallery = {
             }
             $('#lightbox').css('display', 'none');
         });
+
+        var width = $('.img-frame').width();
+        $('.img-frame').css({'height': + width + 'px'});
+        
+        $(window).resize(function() {
+            var width = $('.img-frame').width();
+            $('.img-frame').css({'height': + width + 'px'});
+        });
     },
 
     determineImgClass: function(image) {
