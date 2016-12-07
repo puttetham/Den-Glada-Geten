@@ -116,42 +116,77 @@ $content = mysqli_fetch_assoc($result);
                     <section class="col col_4_of_12">
                       <article class="hotel-column">
                         <h4>Getklappning</h4>
-                        <img src="images/pet-goats.jpg"/>
+                        <div class="cardbox">
+                          <div class="card">
+                            <figure class="front"><img src="images/pet-goats.jpg"/></figure>
+                            <figure class="back"><p>Gå in i hagen och klappa getterna! Personal från glada geten följer med och ser till att du kommer nära både Gösta och Selma, och vid rätt tid på året även lammen.</p><p><strong>Pris: 50 kr / pp</p><p>Tidsåtgång: ca 30 min</strong></p></figure>
+                          </div>
+                        </div>
                       </article>
                     </section>
                     <!-- col 2 -->
                     <section class="col col_4_of_12">
                       <article class="hotel-column">
                         <h4>Skotersafari</h4>
-                        <img src="images/snowmobile.jpg"/>
+                        <div class="cardbox">
+                          <div class="card">
+                            <figure class="front"><img src="images/snowmobile.jpg"/></figure>
+                            <figure class="back"><p>Du tillsammans med en ledare kan känna att du kör tryggt och säkert på en lagom lång tur i den underbara naturen i tjärnholmens omnejd. Under turerna stannar vi för korvgrillning! Någon form av körkort krävs, svenskt eller utländskt.</p><p><strong>Pris: 500 kr / pp</p><p>Tidsåtgång: 4 timmar</p></strong></p></figure>
+                          </div>
+                        </div>
                       </article>
                     </section>
                     <!-- col 3 -->
                     <section class="col col_4_of_12">
                       <article class="hotel-column">
                         <h4>Trevlig miljö</h4>
-                        <img src="images/nature.jpg"/>
+                        <div class="cardbox">
+                          <div class="card">
+                            <figure class="front"><img src="images/nature.jpg"/></figure>
+                            <figure class="back"><p>Beläget i lugna och mysiga områden. Vi på Den glada geten erbjuder er en trevlig miljö både ute och inomhus.</p></figure>
+                          </div>
+                        </div>
                       </article>
                     </section>
                     <!-- col 4 -->
                     <section class="col col_4_of_12">
                       <article class="hotel-column">
                         <h4>Getmatning</h4>
-                        <img src="images/feed-goats.jpg"/>
+                        <div class="cardbox">
+                          <div class="card">
+                            <figure class="front"><img src="images/feed-goats.jpg"/></figure>
+                            <figure class="back"><p>Bokningsbar aktivitet som innefattar mat till Gösta och Selma och kort information om getskötsel.</p><p><strong>Pris: 100 kr / pp</p><p>Tidsåtgång: ca 30 min</strong></p></figure>
+                          </div>
+                        </div>
                       </article>
                     </section>
                     <!-- col 5 -->
                     <section class="col col_4_of_12">
                       <article class="hotel-column">
                         <h4>Skogspromenader</h4>
-                        <img src="images/walks.jpg"/>
+                         <div class="cardbox">
+                          <div class="card">
+                            <figure class="front"><img src="images/walks.jpg"/></figure>
+                            <figure class="back"><p>Guidad vandring runt området för den som är nyfiken på lite mer lokalkännedom. Finns även kartor för kostnadsfria vandringar utan guide.</p><p><strong>Pris: 250 kr / pp</p><p>Tidsåtgång: ca 2 timmar</strong></p></figure>
+                          </div>
+                        </div>
                       </article>
                     </section>
                     <!-- col 6 -->
                     <section class="col col_4_of_12">
                       <article class="hotel-column">
                         <h4>Spa</h4>
-                        <img src="images/spa.jpg"/>
+                          <div class="cardbox">
+                          <div class="card">
+                            <figure class="front"><img src="images/spa.jpg"/></figure>
+                            <figure class="back"><p>Boka en spaupplevelse på den glada getens egna SPA!</p>
+                            <strong><p>Vi erbjuder:<br>
+                            Massage 50 min – 350 kr<br>
+                            Kurbad 30 min – 250 kr<br>
+                            Kroppsscrubb 50 min – 350 kr<br>
+                            Badtunna – 300 kr per timme, uppvärmning sköts av den glada geten.</strong></p></figure>
+                          </div>
+                        </div>
                       </article>
                     </section>
                   </div>
