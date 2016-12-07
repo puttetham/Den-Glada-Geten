@@ -13,10 +13,11 @@ var Gallery = {
         $('.gallery-img').one('load', function() {
             Gallery.determineImgClass(this);
         }).each(function() {
-            if(this.complete){
-                $(this).load();
-                Gallery.index(this);
-            }
+            // if(this.complete){
+                // $(this).load();
+                // console.log(this.src);
+                Gallery.index(this.src);
+            // }
         });
 
         $('.arrow').click(this.switchImg);
@@ -34,7 +35,7 @@ var Gallery = {
 
         var width = $('.img-frame').width();
         $('.img-frame').css({'height': + width + 'px'});
-        
+
         $(window).resize(function() {
             var width = $('.img-frame').width();
             $('.img-frame').css({'height': + width + 'px'});
@@ -48,8 +49,8 @@ var Gallery = {
         $(image).addClass(imgClass);
     },
 
-    index: function(image) {
-        Gallery.images.push($(image).attr('src'));
+    index: function(source) {
+        Gallery.images.push(source);
     },
 
     expand: function() {
