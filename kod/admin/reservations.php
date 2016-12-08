@@ -1,11 +1,3 @@
-<!-- <form>
-    <input type="submit" name="id" value="Boknings-id">
-    <input type="submit" name="name" value="Namn">
-    <input type="submit" name="check-in" value="Incheckning">
-    <input type="submit" name="check-out" value="Utcheckning">
-    <input type="submit" name="room" value="Typ av rum">
-</form> -->
-
 <?php
 
 $query = "SELECT reservations.id, first_name, last_name, email, reserved_from, reserved_to, type
