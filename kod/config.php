@@ -6,4 +6,7 @@
 
 //Localhost connect
 $db = mysqli_connect('localhost', 'root', '', 'den_glada_geten');
+mysqli_query($db, 'SET NAMES utf8');
 ?>
+
+
