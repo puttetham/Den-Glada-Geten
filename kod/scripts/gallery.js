@@ -1,88 +1,76 @@
-var Gallery = {
-
+var gallery = {
     images: [],
     currImg: 0,
-
     init: function() {
+        this.cacheDom();
+        this.indexImages();
+        this.scaleImg();
         this.bindEvents();
     },
-
-    bindEvents: function() {
-        $('.gallery-img').click(this.expand);
-
-        $('.gallery-img').one('load', function() {
-            Gallery.determineImgClass(this);
+    cacheDom: function() {
+        this.$el = $('#gallery-content');
+        this.$thumb = this.$el.find('.gallery-img');
+        this.$expanded = this.$el.find('#big-img');
+        this.$lightbox = this.$el.find('#lightbox');
+        this.$left = this.$el.find('#arrow-left');
+        this.$right = this.$el.find('#arrow-right');
+    },
+    indexImages: function() {
+        var app = this;
+        this.$thumb.one('load', function() {
+            app.setClass(this);
         }).each(function() {
-            // if(this.complete){
-                // $(this).load();
-                // console.log(this.src);
-                Gallery.index(this.src);
-            // }
-        });
-
-        $('.arrow').click(this.switchImg);
-
-        $('#close').on('click', function() {
-            $('#lightbox').css('display', 'none');
-        });
-
-        $('#lightbox, #lightbox-inner, #centerer').on('click', function(e) {
-            if (e.target !== this) {
-                return;
-            }
-            $('#lightbox').css('display', 'none');
-        });
-
-        var width = $('.img-frame').width();
-        $('.img-frame').css({'height': + width + 'px'});
-
-        $(window).resize(function() {
-            var width = $('.img-frame').width();
-            $('.img-frame').css({'height': + width + 'px'});
+            app.images.push(this.src);
         });
     },
-
-    determineImgClass: function(image) {
+    bindEvents: function() {
+        this.$thumb.on('click', this.expand);
+        this.$left.on('click', this.prevImg.bind(this));
+        this.$right.on('click', this.nextImg.bind(this));
+        this.$lightbox.on('click', this.close);
+        $(window).on('resize', this.scaleImg);
+    },
+    setClass: function(image) {
         var height = $(image).height();
         var width = $(image).width();
         var imgClass = ( ( height / width ) < 1) ? 'wide' : 'tall';
         $(image).addClass(imgClass);
     },
-
-    index: function(source) {
-        Gallery.images.push(source);
+    scaleImg: function() {
+        var width = $('.img-frame').width();
+        $('.img-frame').css({'height': + width + 'px'});
     },
-
     expand: function() {
-        $('#big-img').prop('src', this.src);
-        $('#lightbox').css('display', 'block');
-        Gallery.currImg = ($('.gallery-img').index(this));
+        gallery.$expanded.prop('src', this.src);
+        gallery.$lightbox.css('display', 'block');
+        gallery.currImg = gallery.$thumb.index(this);
     },
-
-    switchImg: function() {
-        var id = this.id;
-        var images = Gallery.images;
-
-        if (id == 'arrow-right') {
-            Gallery.currImg++;
+    prevImg: function() {
+        this.currImg--;
+        if (this.currImg < 0) {
+            this.currImg = this.images.length -1;
         }
-        else if (id == 'arrow-left') {
-            Gallery.currImg--;
+        this.$expanded.prop('src', this.images[this.currImg]);
+    },
+    nextImg: function() {
+        this.currImg++;
+        if (this.currImg > this.images.length - 1) {
+            this.currImg = 0;
         }
-
-        if (Gallery.currImg < 0) {
-            Gallery.currImg = images.length - 1;
+        this.$expanded.prop('src', this.images[this.currImg]);
+    },
+    close: function(e) {
+        var id = e.target.id;
+        var c = e.target.classList;
+        if (id == 'big-img' || c.contains('arrow')) {
+            return;
         }
-
-        if (Gallery.currImg > images.length - 1) {
-            Gallery.currImg = 0;
+        else {
+            $(this).css('display', 'none');
         }
-
-        $('#big-img').prop('src', images[Gallery.currImg]);
-
     }
 };
 
 $(function() {
-    Gallery.init();
+    gallery.init();
 });

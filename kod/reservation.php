@@ -16,12 +16,14 @@
         $roomtype = $_POST['roomtype'];
         $arrival_date = $_POST['arrival_date'];
         $depart_date = $_POST['depart_date'];
+
         if (empty($_POST['activity'])){
-        $activity_string = "";
+            $activity_string = "";
         } else {
-        $activity = $_POST['activity'];
-        $activity_string = implode(", ", $activity);
+            $activity = $_POST['activity'];
+            $activity_string = implode(", ", $activity);
         }
+        
         // Get all rooms of the selected room type
         $query = "SELECT *
                 FROM rooms
