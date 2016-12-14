@@ -24,6 +24,11 @@
 	margin-left: 5px;
 }
 
+#booking-div h4{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
 .booking-date {
 	margin-top: 10px;
 	display: flex;
@@ -57,6 +62,40 @@
 
 .invalid-field {
 	border-color: red;
+}
+
+.roomSelect {
+	height: 150px;
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	background: #ddd;
+	margin-bottom: 10px;
+}
+
+.roomSelect > img {
+	height: 100%;
+	display: inline-block;
+}
+
+.roomSelect > h2 {
+	margin: 0;
+	display: inline-block;
+}
+
+.roomSelect div  {
+	display: inline-block;
+	float: right;
+	height: 100%;
+}
+
+.roomSelect > p {
+	height: 50%;
+}
+
+.roomSelect > form {
+	position: relative;
+	top: 0;
 }
 
 	@media screen and (max-width: 516px) {

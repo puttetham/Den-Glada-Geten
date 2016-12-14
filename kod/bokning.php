@@ -29,30 +29,27 @@
    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
    <script src="js/booking.js"></script>
 </head>
- 
- <?php
-  require_once '/config.php';
-  if(isset($_REQUEST['arrival_date'])&& isset($_REQUEST['depart_date'])){ 
-    $arrival = $_REQUEST['arrival_date'];
-    $departure = $_REQUEST['depart_date'];
-    $query = "
-    SELECT type 
-    FROM rooms
-    WHERE rooms.id NOT IN (
-    SELECT reservations.room
-    FROM reservations
-    WHERE reserved_from BETWEEN '$arrival' AND '$departure'
-    OR reserved_to BETWEEN '$arrival' AND '$departure'
-    )
-    ";
 
-    $result = mysqli_query($db, $query);
-    while($row = mysqli_fetch_assoc($result)){
-      echo $row['type'];
-    }
-  };
- ?>
- 
+<?php
+ require_once '/config.php';
+ if(isset($_REQUEST['arrival_date'])&& isset($_REQUEST['depart_date'])){
+   $arrival = $_REQUEST['arrival_date'];
+   $departure = $_REQUEST['depart_date'];
+   $query = "
+   SELECT *
+   FROM rooms
+   WHERE rooms.id NOT IN (
+   SELECT reservations.room
+   FROM reservations
+   WHERE reserved_from BETWEEN '$arrival' AND '$departure'
+   OR reserved_to BETWEEN '$arrival' AND '$departure'
+   )
+   ";
+
+
+ };
+?>
+
   <div id="container">
 
     <!-- Meny -->
@@ -94,7 +91,7 @@
         <h2>Boka ditt rum här!</h2>
       </section>
         <form id="booking-form" name="booking-form" method="GET" >
-          
+
           <div class="booking-date">
             <div>
               <label for="arrival_date">Från</label><br />
@@ -106,20 +103,56 @@
             </div>
           </div>
 
-          <select class="booking-select required" name="roomtype">
+          <!-- <select class="booking-select required" name="roomtype">
               <option value="all" selected>Alla rumstyper</option>
-              <option value="single">Enkelrum</option>
-              <option value="double">Dubbelrum</option>
-              <option value="family">Familjerum</option>
-          </select>
+              <option value="enkelrum">Enkelrum</option>
+              <option value="dubbelrum">Dubbelrum</option>
+              <option value="familjerum">Familjerum</option>
+          </select> -->
 
           <br />
           <br />
           <input class="submit boknings-button" type="submit" value="Sök">
         </form>
     </div>
+    <?php
+    if(isset($query)){
+    $result = mysqli_query($db, $query);
+    while($row = mysqli_fetch_assoc($result)){
+      $source;
+      $header;
+      switch($row['type']){
+        case 'single':
+        $source = 'enkelrum2.jpeg';
+        $header = 'Enkelrum';
+        break;
+        case 'double':
+        $source = 'dubbelrum2.jpeg';
+        $header = 'Dubbelrum';
+        break;
+        case 'family':
+        $source = 'familjerum.jpeg';
+        $header = 'Familjerum';
+        break;
+      }
+      echo
+      "<div class='roomSelect'>
+        <img src='images/rum/$source'>
+        <h2>$header</h2>
+          <div>
+            <p>{$row['id']}<p>
+            <form>
+            <input type='submit' class='submit' value='boka'>
+            </form>
+          </div>
+      </div>
+      ";
+    }
+  }
+    ?>
   </div>
 </section>
+
 
     <!-- Footer -->
     <footer id="main-footer">
