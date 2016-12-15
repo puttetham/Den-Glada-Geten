@@ -140,8 +140,11 @@
         <img src='images/rum/$source'>
         <h2>$header</h2>
           <div>
-            <p>{$row['id']}<p>
-            <form>
+            <p><p>
+            <form method='post' action='boka.php'>
+            <input type='text' name='roomId' value='{$row['id']}'>
+            <input type='text' name='arrival' value='$arrival'>
+            <input type='text' name='departure' value='$departure'>
             <input type='submit' class='submit' value='boka'>
             </form>
           </div>

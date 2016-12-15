@@ -77,24 +77,10 @@
           <br />
           <input id="email" class="text-input" title="Fyll i din epost-adress" type="email" name="email" placeholder="E-postadress"  />
           <input class="text-input" title="Bekräfta e-postadress" type="email" name="confirm_email" placeholder="Bekräfta e-postadress"  />
-          <select class="booking-select required" name="roomtype">
-              <option value="" selected disabled>Välj rum</option>
-              <option value="single">Enkelrum</option>
-              <option value="double">Dubbelrum</option>
-              <option value="family">Familjerum</option>
-          </select>
-          <!--<input type="number" name="rooms" title="Fyll i antal rum" placeholder="Antal rum" min="1" max="8"  />
-          <input type="number" name="guests" title="Fyll i antal gäster" placeholder="Antal gäster" min="1" max="12"  />-->
-          <div class="booking-date">
-            <div>
-              <label for="arrival_date">Från</label><br />
-              <input id="arrival-date" class="datepicker" name="arrival_date" placeholder="åååå-mm-dd" type="text" />
-            </div>
-            <div>
-              <label for="depart_date">Till</label><br />
-              <input id="depart-date" class="datepicker" name="depart_date" placeholder="åååå-mm-dd" type="text" />
-            </div>
-          </div>
+
+          <input type="text" name="roomId" value="<?php echo $_POST['roomId'] ?>">
+          <input type="text" name="arrival" value="<?php echo $_POST['arrival'] ?>">
+          <input type="text" name="departure" value="<?php echo $_POST['departure'] ?>">
           <div class="activities">
             <h2>Boka en aktivitet!</h2>
               <input type="checkbox" name="activity[]" value="skotersafari"><label>Skotersafari 200 kr</label><br>
