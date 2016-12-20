@@ -108,7 +108,7 @@
         $response = '<h1>Tack för din bokning!</h1>';
         }
          else {
-                $response =  'Det finns tyvärr inga lediga rum av den begärda typen. Välj en annan typ av rum och försök igen.';
+                $response =  "'$roomtype', '$firstname', '$lastname', '$email', '$arrival_date', '$depart_date', '$activity_string'";
             }
         }
         echo $response;

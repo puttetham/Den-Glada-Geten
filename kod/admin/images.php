@@ -16,12 +16,13 @@ if( isset($_FILES['user_file']) ) {
         echo "Filen är uppladdad";
     }
     else {
-        echo "Uppladdningen misslyckades" . $_FILES['user_file']['error'] . "";
+        echo "Uppladdningen misslyckades. Felmeddelande:" . $_FILES['user_file']['error'] . "";
     }
 }
 ?>
 
-<section id="gallery" style="margin-top: 25px">
+<section id="gallery-content" style="margin-top: 25px">
+  <div id="gallery">
     <?php
 
         if (isset($_POST['delete_file'])) {
@@ -51,4 +52,5 @@ if( isset($_FILES['user_file']) ) {
             ";
         }
     ?>
+  </div>
 </section>

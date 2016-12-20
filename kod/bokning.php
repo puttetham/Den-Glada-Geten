@@ -31,7 +31,7 @@
 </head>
 
 <?php
- require_once '/config.php';
+ require_once 'config.php';
  if(isset($_REQUEST['arrival_date'])&& isset($_REQUEST['depart_date'])){
    $arrival = $_REQUEST['arrival_date'];
    $departure = $_REQUEST['depart_date'];
@@ -117,41 +117,45 @@
     </div>
     <?php
     if(isset($query)){
-    $result = mysqli_query($db, $query);
-    while($row = mysqli_fetch_assoc($result)){
-      $source;
-      $header;
-      switch($row['type']){
-        case 'single':
-        $source = 'enkelrum2.jpeg';
-        $header = 'Enkelrum';
-        break;
-        case 'double':
-        $source = 'dubbelrum2.jpeg';
-        $header = 'Dubbelrum';
-        break;
-        case 'family':
-        $source = 'familjerum.jpeg';
-        $header = 'Familjerum';
-        break;
+      $result = mysqli_query($db, $query);
+      if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+          $source;
+          $header;
+          switch($row['type']){
+            case 'single':
+            $source = 'enkelrum2.jpeg';
+            $header = 'Enkelrum';
+            break;
+            case 'double':
+            $source = 'dubbelrum2.jpeg';
+            $header = 'Dubbelrum';
+            break;
+            case 'family':
+            $source = 'familjerum.jpeg';
+            $header = 'Familjerum';
+            break;
+          }
+          echo "
+            <div class='roomSelect'>
+              <img src='images/rum/$source'>
+              <div>
+                <h2>$header</h2>
+                <form method='post' action='boka.php'>
+                  <input type='hidden' name='roomId' value='{$row['id']}'>
+                  <input type='hidden' name='arrival' value='$arrival'>
+                  <input type='hidden' name='departure' value='$departure'>
+                  <input type='submit' class='submit' value='boka'>
+                </form>
+              </div>
+            </div>
+          ";
+        }
       }
-      echo
-      "<div class='roomSelect'>
-        <img src='images/rum/$source'>
-        <div>
-          <h2>$header</h2>
-            <p><p>
-            <form method='post' action='boka.php'>
-            <input type='hidden' name='roomId' value='{$row['id']}'>
-            <input type='hidden' name='arrival' value='$arrival'>
-            <input type='hidden' name='departure' value='$departure'>
-            <input type='submit' class='submit' value='boka'>
-            </form>
-          </div>
-      </div>
-      ";
+      else {
+        echo "<p>Det finns tyvärr inga lediga rum för dessa datum!</p>";
+      }
     }
-  }
     ?>
   </div>
 </section>
