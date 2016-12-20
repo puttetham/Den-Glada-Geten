@@ -50,9 +50,9 @@ $content = mysqli_fetch_assoc($result);
               <i class="fa fa-bars"></i>
             </figure>
             <ul>
-                <li><a class="selected" href="#">Hem</a></li>
+                <li><a class="selected" href="index.php">Hem</a></li>
                 <li><a href="vararum.php">Våra rum</a></li>
-                <li><a href="boka.html">Boka rum</a></li>
+                <li><a href="bokning.php">Boka rum</a></li>
                 <li><a href="gallery.php">Bildgalleri</a></li>
                 <li><a href="hittahit.html">Hitta hit</a></li>
             </ul>
@@ -62,9 +62,9 @@ $content = mysqli_fetch_assoc($result);
         <nav id="mobile-slide-menu">
           <!-- menu list -->
           <ul>
-              <a href="#"><li>Hem</li></a>
+              <a href="index.php"><li>Hem</li></a>
               <a href="vararum.php"><li>Våra rum</li></a>
-              <a href="boka.html"><li>Boka rum</li></a>
+              <a href="bokning.php"><li>Boka rum</li></a>
               <a href="gallery.php"><li>Bildgalleri</li></a>
               <a href="hittahit.html"><li>Hitta hit</li></a>
           </ul>
@@ -191,10 +191,7 @@ $content = mysqli_fetch_assoc($result);
                     </section>
                   </div>
                 </section>
-                <!-- till bokningsidan -->
-                <div class="boknings-button">
-                  <a href="boka.html">Boka aktivitet!</a>
-                </div>
+
             </div>
         </section>
 

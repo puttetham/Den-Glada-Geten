@@ -64,7 +64,7 @@
        <ul>
           <li><a href="index.php">Hem</a></li>
           <li><a href="vararum.php">Våra rum</a></li>
-          <li><a class="selected" href="#">Boka rum</a></li>
+          <li><a class="selected" href="bokning.php">Boka rum</a></li>
           <li><a href="gallery.php">Bildgalleri</a></li>
           <li><a href="hittahit.html">Hitta hit</a></li>
        </ul>
@@ -74,9 +74,9 @@
     <nav id="mobile-slide-menu">
       <!-- menu list -->
       <ul>
-          <a href="#"><li>Hem</li></a>
+          <a href="index.php"><li>Hem</li></a>
           <a href="vararum.php"><li>Våra rum</li></a>
-          <a href="#"><li>Boka rum</li></a>
+          <a href="bokning.php"><li>Boka rum</li></a>
           <a href="gallery.php"><li>Bildgalleri</li></a>
           <a href="hittahit.html"><li>Hitta hit</li></a>
       </ul>
@@ -138,13 +138,13 @@
       echo
       "<div class='roomSelect'>
         <img src='images/rum/$source'>
-        <h2>$header</h2>
-          <div>
+        <div>
+          <h2>$header</h2>
             <p><p>
             <form method='post' action='boka.php'>
-            <input type='text' name='roomId' value='{$row['id']}'>
-            <input type='text' name='arrival' value='$arrival'>
-            <input type='text' name='departure' value='$departure'>
+            <input type='hidden' name='roomId' value='{$row['id']}'>
+            <input type='hidden' name='arrival' value='$arrival'>
+            <input type='hidden' name='departure' value='$departure'>
             <input type='submit' class='submit' value='boka'>
             </form>
           </div>

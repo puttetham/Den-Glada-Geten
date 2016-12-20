@@ -50,8 +50,8 @@ $content = mysqli_fetch_assoc($result);
          </figure>
          <ul>
             <li><a href="index.php">Hem</a></li>
-            <li><a class="selected" href="#">Våra rum</a></li>
-            <li><a href="boka.html">Boka rum</a></li>
+            <li><a class="selected" href="vararum.php">Våra rum</a></li>
+            <li><a href="bokning.php">Boka rum</a></li>
             <li><a href="gallery.php">Bildgalleri</a></li>
             <li><a href="hittahit.html">Hitta hit</a></li>
          </ul>
@@ -62,8 +62,8 @@ $content = mysqli_fetch_assoc($result);
         <!-- menu list -->
         <ul>
             <a href="index.php"><li>Hem</li></a>
-            <a href="#"><li>Våra rum</li></a>
-            <a href="boka.html"><li>Boka rum</li></a>
+            <a href="vararum.php"><li>Våra rum</li></a>
+            <a href="bokning.php"><li>Boka rum</li></a>
             <a href="gallery.php"><li>Bildgalleri</li></a>
             <a href="hittahit.html"><li>Hitta hit</li></a>
         </ul>

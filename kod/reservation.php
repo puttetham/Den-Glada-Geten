@@ -45,7 +45,7 @@
        <ul>
           <li><a href="index.php">Hem</a></li>
           <li><a href="vararum.php">Våra rum</a></li>
-          <li><a class="selected" href="#">Boka rum</a></li>
+          <li><a class="selected" href="bokning.php">Boka rum</a></li>
           <li><a href="gallery.php">Bildgalleri</a></li>
           <li><a href="hittahit.html">Hitta hit</a></li>
        </ul>
@@ -55,9 +55,9 @@
     <nav id="mobile-slide-menu">
       <!-- menu list -->
       <ul>
-          <a href="#"><li>Hem</li></a>
+          <a href="index.php"><li>Hem</li></a>
           <a href="vararum.php"><li>Våra rum</li></a>
-          <a href="#"><li>Boka rum</li></a>
+          <a href="bokning.php"><li>Boka rum</li></a>
           <a href="gallery.php"><li>Bildgalleri</li></a>
           <a href="hittahit.html"><li>Hitta hit</li></a>
       </ul>
@@ -65,7 +65,7 @@
     <!--Kalender-->
   <section id="kalender-section">
   <div class="inner-container">
-    <section id="main-content">
+    <section id="confirmation">
 <?php
     require_once 'config.php';
 
@@ -105,7 +105,7 @@
         // $headers = 'From: glada.geten@kyh.se';
         // $message = 'Tack för din bokning!';
         // mail($email, 'Bokningsbekräftelse', $message, $headers);
-        $response = '<p>Tack för din bokning!</p>';
+        $response = '<h1>Tack för din bokning!</h1>';
         }
          else {
                 $response =  'Det finns tyvärr inga lediga rum av den begärda typen. Välj en annan typ av rum och försök igen.';

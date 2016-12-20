@@ -45,7 +45,7 @@
        <ul>
           <li><a href="index.php">Hem</a></li>
           <li><a href="vararum.php">Våra rum</a></li>
-          <li><a class="selected" href="#">Boka rum</a></li>
+          <li><a class="selected" href="bokning.php">Boka rum</a></li>
           <li><a href="gallery.php">Bildgalleri</a></li>
           <li><a href="hittahit.html">Hitta hit</a></li>
        </ul>
@@ -55,9 +55,9 @@
     <nav id="mobile-slide-menu">
       <!-- menu list -->
       <ul>
-          <a href="#"><li>Hem</li></a>
+          <a href="index.php"><li>Hem</li></a>
           <a href="vararum.php"><li>Våra rum</li></a>
-          <a href="#"><li>Boka rum</li></a>
+          <a href="bokning.php"><li>Boka rum</li></a>
           <a href="gallery.php"><li>Bildgalleri</li></a>
           <a href="hittahit.html"><li>Hitta hit</li></a>
       </ul>
@@ -72,15 +72,19 @@
         <h2>Boka ditt rum här!</h2>
       </section>
         <form id="booking-form" name="booking-form" method="post" action="reservation.php">
+          <label class="booking_label" for="firstname">Förnamn</label>
           <input class="text-input" title="Fyll i ditt förnamn" type="text" name="firstname" placeholder="Förnamn" />
+          <label class="booking_label" for="lastname">Efternamn</label>
           <input class="text-input" title="Fyll i ditt efternamn" type="text" name="lastname" placeholder="Efternamn"  />
           <br />
-          <input id="email" class="text-input" title="Fyll i din epost-adress" type="email" name="email" placeholder="E-postadress"  />
-          <input class="text-input" title="Bekräfta e-postadress" type="email" name="confirm_email" placeholder="Bekräfta e-postadress"  />
+          <label class="booking_label" for="email">Mail</label>
+          <input id="email" class="text-input" title="Fyll i din epost-adress" type="email" name="email" placeholder="Mail"  />
+          <label class="booking_label" for="confirm_email">Bekräfta mail</label>
+          <input class="text-input" title="Bekräfta e-postadress" type="email" name="confirm_email" placeholder="Bekräfta mail"  />
 
-          <input type="text" name="roomId" value="<?php echo $_POST['roomId'] ?>">
-          <input type="text" name="arrival" value="<?php echo $_POST['arrival'] ?>">
-          <input type="text" name="departure" value="<?php echo $_POST['departure'] ?>">
+          <input type="hidden" name="roomId" value="<?php echo $_POST['roomId'] ?>">
+          <input type="hidden" name="arrival" value="<?php echo $_POST['arrival'] ?>">
+          <input type="hidden" name="departure" value="<?php echo $_POST['departure'] ?>">
           <div class="activities">
             <h2>Boka en aktivitet!</h2>
               <input type="checkbox" name="activity[]" value="skotersafari"><label>Skotersafari 200 kr</label><br>
