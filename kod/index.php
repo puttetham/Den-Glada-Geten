@@ -83,9 +83,9 @@ $content = mysqli_fetch_assoc($result);
         <!-- Galleri -->
         <section id="start-gallery">
             <div class="slideshow">
-              <img class="mySlides" src="images/1.jpg" style="width:100%" height= "100%;">
-              <img class="mySlides" src="images/2.jpg" style="width:100%" height= "100%;">
-              <img class="mySlides" src="images/3.jpg" style="width:100%" height= "100%;">
+              <img class="mySlides" src="images/10.jpg" style="width:100%">
+              <img class="mySlides" src="images/19.jpg" style="width:100%">
+              <img class="mySlides" src="images/11.jpg" style="width:100%">
             </div>
         </section>
 
