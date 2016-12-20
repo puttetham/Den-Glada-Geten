@@ -12,7 +12,6 @@
    <link rel="stylesheet" type="text/css" href="style.css">
    <!-- icons -->
    <script src="https://use.fontawesome.com/986342ab7c.js"></script>
-   <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
    <!-- fonts -->
    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
@@ -62,15 +61,19 @@
           <a href="hittahit.html"><li>Hitta hit</li></a>
       </ul>
     </nav>
-    <!--Kalender-->
-  <section id="kalender-section">
-  <div class="inner-container">
 
-    <!-- kalender form-->
-    <div id="booking-div">
-      <section class="sect-heading">
-        <h2>Boka ditt rum här!</h2>
-      </section>
+  <!--Kalender-->
+  <section id="kalender-section">
+    <div class="inner-container">
+
+      <!-- kalender form-->
+      <div id="booking-div">
+        <!-- section heading -->
+        <section class="sect-heading">
+                <h2>Boka ditt rum här!</h2>
+        </section>
+        <!-- BOOKING FORM -->
+        <!-- book rooms -->
         <form id="booking-form" name="booking-form" method="post" action="reservation.php">
           <label class="booking_label" for="firstname">Förnamn</label>
           <input class="text-input" title="Fyll i ditt förnamn" type="text" name="firstname" placeholder="Förnamn" />
@@ -85,6 +88,8 @@
           <input type="hidden" name="roomId" value="<?php echo $_POST['roomId'] ?>">
           <input type="hidden" name="arrival" value="<?php echo $_POST['arrival'] ?>">
           <input type="hidden" name="departure" value="<?php echo $_POST['departure'] ?>">
+
+          <!-- book acitivity -->
           <div class="activities">
             <h2>Boka en aktivitet!</h2>
               <input type="checkbox" name="activity[]" value="skotersafari"><label>Skotersafari 200 kr</label><br>
@@ -101,28 +106,28 @@
           <br />
           <input class="submit boknings-button" type="submit" value="Boka">
         </form>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-    <!-- Footer -->
-    <footer id="main-footer">
-        <div class="inner-container">
-            <section id="footer-info">
-                <p>Gamla Bodenvägen 301</p>
-                <p>954 42</p>
-                <p>Södra Sunderbyn, Sverige</p>
-                <span>&copy; Den glada geten 2016</span>
-            </section>
-            <section id="footer-links">
-                <ul>
-                    <li><a href="tel:076-1112223"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-                    <li><a href="mailto:glada.geten@kyh.se"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                   </ul>
-            </section>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="inner-container">
+      <section id="footer-info">
+        <p>Gamla Bodenvägen 301</p>
+        <p>954 42</p>
+        <p>Södra Sunderbyn, Sverige</p>
+        <span>&copy; Den glada geten 2016</span>
+      </section>
+      <section id="footer-links">
+        <ul>
+          <li><a href="tel:076-1112223"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:glada.geten@kyh.se"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
